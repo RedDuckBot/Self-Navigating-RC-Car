@@ -1,3 +1,3 @@
 ## Overview
 
-A robot named NavEwan tasked with navigating across MacEwan's campus.
+A robot named MacNav tasked with navigating across MacEwan's campus.
