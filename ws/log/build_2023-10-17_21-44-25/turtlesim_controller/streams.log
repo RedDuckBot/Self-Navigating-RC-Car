@@ -1,0 +1,50 @@
+[4.223s] Invoking command in '/mac_everything/ws/build/turtlesim_controller': PYTHONPATH=/mac_everything/ws/build/turtlesim_controller/prefix_override:/mac_everything/ws/install/turtlesim_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/turtlesim_controller/build --no-deps install_data
+[5.777s] running develop
+[5.782s] /usr/local/lib/python3.8/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[5.784s] !!
+[5.785s] 
+[5.787s]         ********************************************************************************
+[5.788s]         Please avoid running ``setup.py`` and ``easy_install``.
+[5.790s]         Instead, use pypa/build, pypa/installer or other
+[5.791s]         standards-based tools.
+[5.793s] 
+[5.795s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[5.796s]         ********************************************************************************
+[5.797s] 
+[5.797s] !!
+[5.798s]   easy_install.initialize_options(self)
+[5.953s] /usr/local/lib/python3.8/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[5.954s] !!
+[5.954s] 
+[5.955s]         ********************************************************************************
+[5.955s]         Please avoid running ``setup.py`` directly.
+[5.955s]         Instead, use pypa/build, pypa/installer or other
+[5.956s]         standards-based tools.
+[5.956s] 
+[5.957s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[5.957s]         ********************************************************************************
+[5.957s] 
+[5.958s] !!
+[5.966s]   self.initialize_options()
+[6.846s] running egg_info
+[6.847s] creating turtlesim_controller.egg-info
+[6.926s] writing turtlesim_controller.egg-info/PKG-INFO
+[6.927s] writing dependency_links to turtlesim_controller.egg-info/dependency_links.txt
+[6.927s] writing entry points to turtlesim_controller.egg-info/entry_points.txt
+[6.928s] writing requirements to turtlesim_controller.egg-info/requires.txt
+[6.929s] writing top-level names to turtlesim_controller.egg-info/top_level.txt
+[6.929s] writing manifest file 'turtlesim_controller.egg-info/SOURCES.txt'
+[7.097s] reading manifest file 'turtlesim_controller.egg-info/SOURCES.txt'
+[7.100s] writing manifest file 'turtlesim_controller.egg-info/SOURCES.txt'
+[7.371s] running build_ext
+[7.381s] Creating /mac_everything/ws/install/turtlesim_controller/lib/python3.8/site-packages/turtlesim-controller.egg-link (link to .)
+[7.383s] Installing turtlesim_control_node script to /mac_everything/ws/install/turtlesim_controller/lib/turtlesim_controller
+[7.384s] 
+[7.385s] Installed /mac_everything/ws/build/turtlesim_controller
+[7.386s] running install_data
+[7.386s] creating /mac_everything/ws/install/turtlesim_controller/share/ament_index
+[7.387s] creating /mac_everything/ws/install/turtlesim_controller/share/ament_index/resource_index
+[7.387s] creating /mac_everything/ws/install/turtlesim_controller/share/ament_index/resource_index/packages
+[7.388s] copying resource/turtlesim_controller -> /mac_everything/ws/install/turtlesim_controller/share/ament_index/resource_index/packages
+[7.388s] copying package.xml -> /mac_everything/ws/install/turtlesim_controller/share/turtlesim_controller
+[7.567s] Invoked command in '/mac_everything/ws/build/turtlesim_controller' returned '0': PYTHONPATH=/mac_everything/ws/build/turtlesim_controller/prefix_override:/mac_everything/ws/install/turtlesim_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/turtlesim_controller/build --no-deps install_data

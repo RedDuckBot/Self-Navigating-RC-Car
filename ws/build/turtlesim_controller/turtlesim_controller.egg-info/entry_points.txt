@@ -1,0 +1,3 @@
+[console_scripts]
+turtlesim_control_node = turtlesim_controller.turtle_node:main
+

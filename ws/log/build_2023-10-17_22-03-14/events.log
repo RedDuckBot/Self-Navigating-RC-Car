@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.001958] (turtlesim_controller) JobQueued: {'identifier': 'turtlesim_controller', 'dependencies': OrderedDict()}
+[0.002298] (turtlesim_controller) JobStarted: {'identifier': 'turtlesim_controller'}
+[0.100434] (-) TimerEvent: {}
+[0.201243] (-) TimerEvent: {}
+[0.302431] (-) TimerEvent: {}
+[0.403448] (-) TimerEvent: {}
+[0.504585] (-) TimerEvent: {}
+[0.605294] (-) TimerEvent: {}
+[0.705976] (-) TimerEvent: {}
+[0.806669] (-) TimerEvent: {}
+[0.907366] (-) TimerEvent: {}
+[1.008045] (-) TimerEvent: {}
+[1.109007] (-) TimerEvent: {}
+[1.209996] (-) TimerEvent: {}
+[1.310744] (-) TimerEvent: {}
+[1.411456] (-) TimerEvent: {}
+[1.512182] (-) TimerEvent: {}
+[1.615529] (-) TimerEvent: {}
+[1.716804] (-) TimerEvent: {}
+[1.817553] (-) TimerEvent: {}
+[1.919014] (-) TimerEvent: {}
+[2.019638] (-) TimerEvent: {}
+[2.120497] (-) TimerEvent: {}
+[2.221223] (-) TimerEvent: {}
+[2.321888] (-) TimerEvent: {}
+[2.422502] (-) TimerEvent: {}
+[2.523164] (-) TimerEvent: {}
+[2.623853] (-) TimerEvent: {}
+[2.724532] (-) TimerEvent: {}
+[2.825289] (-) TimerEvent: {}
+[2.927317] (-) TimerEvent: {}
+[3.028002] (-) TimerEvent: {}
+[3.128652] (-) TimerEvent: {}
+[3.229516] (-) TimerEvent: {}
+[3.330155] (-) TimerEvent: {}
+[3.431593] (-) TimerEvent: {}
+[3.532288] (-) TimerEvent: {}
+[3.633032] (-) TimerEvent: {}
+[3.728797] (turtlesim_controller) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/mac_everything/ws/build/turtlesim_controller/build', '--no-deps', 'install_data'], 'cwd': '/mac_everything/ws/build/turtlesim_controller', 'env': {'OPENBLAS_CORETYPE': 'ARMV8', 'PYTHONIOENCODING': 'utf-8', 'HOSTNAME': '5116289fc500', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/install/opt/rviz_ogre_vendor/lib:/opt/ros/iron/install/lib:/usr/local/cuda/lib64:', 'HOME': '/root', 'OLDPWD': '/mac_everything', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/mac_everything/ws/install:/opt/ros/iron/install', 'ROS_DISTRO': 'iron', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/ros/iron/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/iron/install/lib/pkgconfig', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'PATH': '/opt/ros/iron/install/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/iron', 'AMENT_PREFIX_PATH': '/mac_everything/ws/install/turtlesim_controller:/opt/ros/iron/install', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mac_everything/ws/build/turtlesim_controller', 'CUDA_HOME': '/usr/local/cuda', 'PYTHONPATH': '/mac_everything/ws/build/turtlesim_controller/prefix_override:/mac_everything/ws/install/turtlesim_controller/lib/python3.8/site-packages:/mac_everything/ws/build/turtlesim_controller:/mac_everything/ws/install/turtlesim_controller/lib/python3.8/site-packages:/opt/ros/iron/install/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/iron/install'}, 'shell': False}
+[3.735755] (-) TimerEvent: {}
+[3.836832] (-) TimerEvent: {}
+[3.938118] (-) TimerEvent: {}
+[4.038812] (-) TimerEvent: {}
+[4.139497] (-) TimerEvent: {}
+[4.240177] (-) TimerEvent: {}
+[4.340864] (-) TimerEvent: {}
+[4.441532] (-) TimerEvent: {}
+[4.542198] (-) TimerEvent: {}
+[4.642803] (-) TimerEvent: {}
+[4.743427] (-) TimerEvent: {}
+[4.844117] (-) TimerEvent: {}
+[4.944737] (-) TimerEvent: {}
+[5.045463] (-) TimerEvent: {}
+[5.062480] (turtlesim_controller) StdoutLine: {'line': b'running develop\n'}
+[5.145617] (-) TimerEvent: {}
+[5.246295] (-) TimerEvent: {}
+[5.346998] (-) TimerEvent: {}
+[5.447667] (-) TimerEvent: {}
+[5.548350] (-) TimerEvent: {}
+[5.649042] (-) TimerEvent: {}
+[5.749717] (-) TimerEvent: {}
+[5.850330] (-) TimerEvent: {}
+[5.924029] (turtlesim_controller) StdoutLine: {'line': b'running egg_info\n'}
+[5.924786] (turtlesim_controller) StdoutLine: {'line': b'writing turtlesim_controller.egg-info/PKG-INFO\n'}
+[5.925643] (turtlesim_controller) StdoutLine: {'line': b'writing dependency_links to turtlesim_controller.egg-info/dependency_links.txt\n'}
+[5.926167] (turtlesim_controller) StdoutLine: {'line': b'writing entry points to turtlesim_controller.egg-info/entry_points.txt\n'}
+[5.926652] (turtlesim_controller) StdoutLine: {'line': b'writing requirements to turtlesim_controller.egg-info/requires.txt\n'}
+[5.927127] (turtlesim_controller) StdoutLine: {'line': b'writing top-level names to turtlesim_controller.egg-info/top_level.txt\n'}
+[5.934191] (turtlesim_controller) StdoutLine: {'line': b"reading manifest file 'turtlesim_controller.egg-info/SOURCES.txt'\n"}
+[5.937425] (turtlesim_controller) StdoutLine: {'line': b"writing manifest file 'turtlesim_controller.egg-info/SOURCES.txt'\n"}
+[5.950532] (-) TimerEvent: {}
+[6.051203] (-) TimerEvent: {}
+[6.098683] (turtlesim_controller) StdoutLine: {'line': b'running build_ext\n'}
+[6.099452] (turtlesim_controller) StdoutLine: {'line': b'Creating /mac_everything/ws/install/turtlesim_controller/lib/python3.8/site-packages/turtlesim-controller.egg-link (link to .)\n'}
+[6.102515] (turtlesim_controller) StdoutLine: {'line': b'Installing turtlesim_control_node script to /mac_everything/ws/install/turtlesim_controller/lib/turtlesim_controller\n'}
+[6.103527] (turtlesim_controller) StdoutLine: {'line': b'\n'}
+[6.104013] (turtlesim_controller) StdoutLine: {'line': b'Installed /mac_everything/ws/build/turtlesim_controller\n'}
+[6.104544] (turtlesim_controller) StdoutLine: {'line': b'running install_data\n'}
+[6.151439] (-) TimerEvent: {}
+[6.239403] (turtlesim_controller) CommandEnded: {'returncode': 0}
+[6.253602] (-) TimerEvent: {}
+[6.358110] (-) TimerEvent: {}
+[6.382802] (turtlesim_controller) JobEnded: {'identifier': 'turtlesim_controller', 'rc': 0}
+[6.386518] (-) EventReactorShutdown: {}

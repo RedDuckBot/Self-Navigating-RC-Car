@@ -1,0 +1,6 @@
+{
+    "editor.tabsize": 8,
+    "editor.rulers": [
+        {"column":80,"color":"#ff0000"}
+    ],
+}
