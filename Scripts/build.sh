@@ -1,1 +1,1 @@
-docker build -t macnav .
+docker build --rm --tag macnav .

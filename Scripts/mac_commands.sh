@@ -4,5 +4,5 @@
 
 function buildpy() {
     colcon build --symlink-install
-    source ~/.bashrc
+    source /root/.bashrc
 }
