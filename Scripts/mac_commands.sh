@@ -4,5 +4,5 @@
 
 function buildpy() {
     colcon build --symlink-install
-    source /root/.bashrc
+    source /home/macbot_user/.bashrc
 }
