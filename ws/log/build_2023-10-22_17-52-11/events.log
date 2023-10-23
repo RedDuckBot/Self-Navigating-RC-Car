@@ -1,0 +1,68 @@
+[0.000000] (-) TimerEvent: {}
+[0.000539] (manual_control) JobQueued: {'identifier': 'manual_control', 'dependencies': OrderedDict()}
+[0.002672] (manual_control) JobStarted: {'identifier': 'manual_control'}
+[0.099051] (-) TimerEvent: {}
+[0.199966] (-) TimerEvent: {}
+[0.300636] (-) TimerEvent: {}
+[0.401262] (-) TimerEvent: {}
+[0.502076] (-) TimerEvent: {}
+[0.602817] (-) TimerEvent: {}
+[0.703505] (-) TimerEvent: {}
+[0.804121] (-) TimerEvent: {}
+[0.905544] (-) TimerEvent: {}
+[1.006298] (-) TimerEvent: {}
+[1.112019] (-) TimerEvent: {}
+[1.221504] (-) TimerEvent: {}
+[1.322384] (-) TimerEvent: {}
+[1.423066] (-) TimerEvent: {}
+[1.523690] (-) TimerEvent: {}
+[1.624394] (-) TimerEvent: {}
+[1.725048] (-) TimerEvent: {}
+[1.825700] (-) TimerEvent: {}
+[1.926398] (-) TimerEvent: {}
+[2.027054] (-) TimerEvent: {}
+[2.127706] (-) TimerEvent: {}
+[2.228360] (-) TimerEvent: {}
+[2.329023] (-) TimerEvent: {}
+[2.429721] (-) TimerEvent: {}
+[2.530469] (-) TimerEvent: {}
+[2.631241] (-) TimerEvent: {}
+[2.732022] (-) TimerEvent: {}
+[2.758592] (manual_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/mac_everything/ws/build/manual_control/build', '--no-deps', 'install_data'], 'cwd': '/mac_everything/ws/build/manual_control', 'env': {'SUDO_GID': '1000', 'MAIL': '/var/mail/root', 'USER': 'root', 'HOSTNAME': 'd26d09275bfd', 'HOME': '/root', 'SUDO_UID': '1000', 'LOGNAME': 'root', 'TERM': 'xterm', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'DISPLAY': '172.17.0.1:10', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUDO_COMMAND': '/usr/bin/colcon build --symlink-install', 'SHELL': '/bin/bash', 'SUDO_USER': 'macbot_user', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/mac_everything/ws/build/manual_control', 'COLCON': '1', 'PYTHONPATH': '/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages:'}, 'shell': False}
+[2.832328] (-) TimerEvent: {}
+[2.933218] (-) TimerEvent: {}
+[3.034477] (-) TimerEvent: {}
+[3.140291] (-) TimerEvent: {}
+[3.241236] (-) TimerEvent: {}
+[3.342184] (-) TimerEvent: {}
+[3.443109] (-) TimerEvent: {}
+[3.544056] (-) TimerEvent: {}
+[3.644997] (-) TimerEvent: {}
+[3.745955] (-) TimerEvent: {}
+[3.788110] (manual_control) StdoutLine: {'line': b'running develop\n'}
+[3.846153] (-) TimerEvent: {}
+[3.946976] (-) TimerEvent: {}
+[4.047766] (-) TimerEvent: {}
+[4.148431] (-) TimerEvent: {}
+[4.239089] (manual_control) StdoutLine: {'line': b'running egg_info\n'}
+[4.241134] (manual_control) StdoutLine: {'line': b'writing manual_control.egg-info/PKG-INFO\n'}
+[4.241605] (manual_control) StdoutLine: {'line': b'writing dependency_links to manual_control.egg-info/dependency_links.txt\n'}
+[4.241995] (manual_control) StdoutLine: {'line': b'writing entry points to manual_control.egg-info/entry_points.txt\n'}
+[4.242465] (manual_control) StdoutLine: {'line': b'writing requirements to manual_control.egg-info/requires.txt\n'}
+[4.243001] (manual_control) StdoutLine: {'line': b'writing top-level names to manual_control.egg-info/top_level.txt\n'}
+[4.247753] (manual_control) StdoutLine: {'line': b"reading manifest file 'manual_control.egg-info/SOURCES.txt'\n"}
+[4.248634] (-) TimerEvent: {}
+[4.251034] (manual_control) StdoutLine: {'line': b"writing manifest file 'manual_control.egg-info/SOURCES.txt'\n"}
+[4.348846] (-) TimerEvent: {}
+[4.415024] (manual_control) StdoutLine: {'line': b'running build_ext\n'}
+[4.417157] (manual_control) StdoutLine: {'line': b'Creating /mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual-control.egg-link (link to .)\n'}
+[4.418867] (manual_control) StdoutLine: {'line': b'Installing manual_control_node script to /mac_everything/ws/install/manual_control/lib/manual_control\n'}
+[4.419859] (manual_control) StdoutLine: {'line': b'\n'}
+[4.420444] (manual_control) StdoutLine: {'line': b'Installed /mac_everything/ws/build/manual_control\n'}
+[4.420836] (manual_control) StdoutLine: {'line': b'running install_data\n'}
+[4.449094] (-) TimerEvent: {}
+[4.545000] (manual_control) CommandEnded: {'returncode': 0}
+[4.567626] (-) TimerEvent: {}
+[4.668488] (manual_control) JobEnded: {'identifier': 'manual_control', 'rc': 0}
+[4.671587] (-) TimerEvent: {}
+[4.672231] (-) EventReactorShutdown: {}

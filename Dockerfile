@@ -3,6 +3,7 @@ FROM dustynv/ros:iron-desktop-l4t-r35.4.1
 WORKDIR /mac_everything 
 
 COPY ./Scripts/mac_commands.sh ./Scripts/mac_commands.sh
+COPY ./Packages /mac_everything/Packages
 RUN apt-get update
 
 ##############################################################################
@@ -20,17 +21,15 @@ RUN apt-get update
 #USER macbot_user
 #ENV HOME /home/macbot_user
 ###############################################################################
-
-
 RUN apt-get install -y python3-pip 
-RUN pip3 install setuptools==58.2.0
+RUN python3 -m pip install -r ./Packages/requirements.txt
+
 RUN apt-get install -qqy x11-apps xauth 
 RUN apt-get install -y tmux 
-RUN apt-get install -y joystick
 RUN useradd -m macbot_user && echo "macbot_user:macbot_user" | \ 
     chpasswd && adduser macbot_user sudo
 USER macbot_user
-#RUN adduser --disabled-password --gecos "" macbot_user
+COPY ./Config_Files /home/macbot_user
 RUN echo "source /mac_everything/Scripts/mac_commands.sh" >> \
     /home/macbot_user/.bashrc
 RUN echo "source /mac_everything/ws/install/setup.bash" >> \

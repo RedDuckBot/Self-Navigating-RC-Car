@@ -3,6 +3,6 @@
 #ROS functions
 
 function buildpy() {
-    colcon build --symlink-install
+    sudo colcon build --symlink-install
     source /home/macbot_user/.bashrc
 }

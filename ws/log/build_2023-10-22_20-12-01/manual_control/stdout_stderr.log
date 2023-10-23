@@ -1,0 +1,28 @@
+running develop
+running egg_info
+writing ../../build/manual_control/manual_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/manual_control/manual_control.egg-info/dependency_links.txt
+writing entry points to ../../build/manual_control/manual_control.egg-info/entry_points.txt
+writing requirements to ../../build/manual_control/manual_control.egg-info/requires.txt
+writing top-level names to ../../build/manual_control/manual_control.egg-info/top_level.txt
+reading manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying manual_control/controller_node.py -> /mac_everything/ws/build/manual_control/build/lib/manual_control
+running install
+running install_lib
+copying /mac_everything/ws/build/manual_control/build/lib/manual_control/controller_node.py -> /mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control
+byte-compiling /mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control/controller_node.py to controller_node.cpython-38.pyc
+  File "/mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control/controller_node.py", line 30
+    if msg.buttons[0] and !self.has_enabled_drive:
+                          ^
+SyntaxError: invalid syntax
+
+running install_data
+running install_egg_info
+removing '/mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/manual_control/manual_control.egg-info to /mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control-0.0.0-py3.8.egg-info
+running install_scripts
+Installing manual_control_node script to /mac_everything/ws/install/manual_control/lib/manual_control
+writing list of installed files to '/mac_everything/ws/build/manual_control/install.log'

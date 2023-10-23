@@ -1,0 +1,24 @@
+[2.737s] Invoking command in '/mac_everything/ws/build/manual_control': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /mac_everything/ws/build/manual_control/build
+[3.758s] running develop
+[4.306s] Invoked command in '/mac_everything/ws/build/manual_control' returned '0': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /mac_everything/ws/build/manual_control/build
+[4.313s] Invoking command in '/mac_everything/ws/src/manual_control': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/manual_control build --build-base /mac_everything/ws/build/manual_control/build install --record /mac_everything/ws/build/manual_control/install.log --single-version-externally-managed
+[5.245s] running egg_info
+[5.249s] writing ../../build/manual_control/manual_control.egg-info/PKG-INFO
+[5.250s] writing dependency_links to ../../build/manual_control/manual_control.egg-info/dependency_links.txt
+[5.251s] writing entry points to ../../build/manual_control/manual_control.egg-info/entry_points.txt
+[5.251s] writing requirements to ../../build/manual_control/manual_control.egg-info/requires.txt
+[5.251s] writing top-level names to ../../build/manual_control/manual_control.egg-info/top_level.txt
+[5.256s] reading manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+[5.260s] writing manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+[5.261s] running build
+[5.261s] running build_py
+[5.262s] running install
+[5.266s] running install_lib
+[5.272s] running install_data
+[5.274s] running install_egg_info
+[5.280s] removing '/mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control-0.0.0-py3.8.egg-info' (and everything under it)
+[5.281s] Copying ../../build/manual_control/manual_control.egg-info to /mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control-0.0.0-py3.8.egg-info
+[5.285s] running install_scripts
+[5.359s] Installing manual_turtle_node script to /mac_everything/ws/install/manual_control/lib/manual_control
+[5.360s] writing list of installed files to '/mac_everything/ws/build/manual_control/install.log'
+[5.461s] Invoked command in '/mac_everything/ws/src/manual_control' returned '0': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/manual_control build --build-base /mac_everything/ws/build/manual_control/build install --record /mac_everything/ws/build/manual_control/install.log --single-version-externally-managed

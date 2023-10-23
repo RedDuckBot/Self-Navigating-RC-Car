@@ -1,0 +1,18 @@
+[2.642s] Invoking command in '/mac_everything/ws/build/manual_control': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/manual_control/build --no-deps install_data
+[3.623s] running develop
+[4.070s] running egg_info
+[4.071s] writing manual_control.egg-info/PKG-INFO
+[4.071s] writing dependency_links to manual_control.egg-info/dependency_links.txt
+[4.072s] writing entry points to manual_control.egg-info/entry_points.txt
+[4.072s] writing requirements to manual_control.egg-info/requires.txt
+[4.073s] writing top-level names to manual_control.egg-info/top_level.txt
+[4.077s] reading manifest file 'manual_control.egg-info/SOURCES.txt'
+[4.080s] writing manifest file 'manual_control.egg-info/SOURCES.txt'
+[4.242s] running build_ext
+[4.242s] Creating /mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual-control.egg-link (link to .)
+[4.246s] Installing manual_arduino_node script to /mac_everything/ws/install/manual_control/lib/manual_control
+[4.246s] Installing manual_turtle_node script to /mac_everything/ws/install/manual_control/lib/manual_control
+[4.247s] 
+[4.248s] Installed /mac_everything/ws/build/manual_control
+[4.248s] running install_data
+[4.368s] Invoked command in '/mac_everything/ws/build/manual_control' returned '0': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/manual_control/build --no-deps install_data

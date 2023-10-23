@@ -1,0 +1,14 @@
+{
+    "command": 
+    {
+        "drive": false
+    },
+    "servo":
+    {
+        "angle": 40
+    },
+    "motor":
+    {
+        "speed": 0
+    }
+}

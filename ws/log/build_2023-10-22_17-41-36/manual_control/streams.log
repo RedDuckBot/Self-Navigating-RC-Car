@@ -1,0 +1,24 @@
+[3.070s] Invoking command in '/mac_everything/ws/build/manual_control': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/manual_control/build --no-deps install_data
+[4.069s] running develop
+[4.510s] running egg_info
+[4.511s] creating manual_control.egg-info
+[4.511s] writing manual_control.egg-info/PKG-INFO
+[4.512s] writing dependency_links to manual_control.egg-info/dependency_links.txt
+[4.512s] writing entry points to manual_control.egg-info/entry_points.txt
+[4.513s] writing requirements to manual_control.egg-info/requires.txt
+[4.513s] writing top-level names to manual_control.egg-info/top_level.txt
+[4.514s] writing manifest file 'manual_control.egg-info/SOURCES.txt'
+[4.518s] reading manifest file 'manual_control.egg-info/SOURCES.txt'
+[4.521s] writing manifest file 'manual_control.egg-info/SOURCES.txt'
+[4.685s] running build_ext
+[4.686s] Creating /mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual-control.egg-link (link to .)
+[4.689s] Installing manual_control_node script to /mac_everything/ws/install/manual_control/lib/manual_control
+[4.690s] 
+[4.691s] Installed /mac_everything/ws/build/manual_control
+[4.691s] running install_data
+[4.692s] creating /mac_everything/ws/install/manual_control/share/ament_index
+[4.692s] creating /mac_everything/ws/install/manual_control/share/ament_index/resource_index
+[4.693s] creating /mac_everything/ws/install/manual_control/share/ament_index/resource_index/packages
+[4.693s] copying resource/manual_control -> /mac_everything/ws/install/manual_control/share/ament_index/resource_index/packages
+[4.694s] copying package.xml -> /mac_everything/ws/install/manual_control/share/manual_control
+[4.817s] Invoked command in '/mac_everything/ws/build/manual_control' returned '0': PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.8/site-packages: /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/manual_control/build --no-deps install_data
