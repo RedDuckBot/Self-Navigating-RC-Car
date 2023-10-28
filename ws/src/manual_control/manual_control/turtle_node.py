@@ -23,7 +23,6 @@ class turtleNode(Node):
         twist.linear.x = 4*msg.axes[1]
         twist.angular.z = 4*msg.axes[0]
         self.publisher.publish(twist)
-        print(msg.axes[3])
 
 
 def main(args=None):

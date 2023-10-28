@@ -1,0 +1,18 @@
+#Docker file for remote machine
+FROM osrf/ros:iron-desktop
+
+COPY cyclonedds.xml /tmp/cyclonedds.xml
+COPY .tmux.conf /root
+
+#Setup for cyclondds middleware
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+ENV CYCLONEDDS_URI=/tmp/cyclonedds.xml
+ENV ROS_DOMAIN_ID=0
+
+RUN apt-get update
+RUN apt-get install -y iputils-ping
+RUN apt-get install -y ros-iron-rmw-cyclonedds-cpp
+RUN apt-get install -y tmux 
+RUN echo source /opt/ros/iron/setup.bash >> /root/.bashrc 
+
+CMD ["/bin/bash"] 

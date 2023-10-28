@@ -6,7 +6,7 @@ from xbox360controller import Xbox360Controller
 
 arduino = serial.Serial(port="/dev/ttyACM0",baudrate=115200)
 
-speeds = [0,100,190,255]
+speeds = [0,120,190,255]
 speedIndex = 1
 
 drive_mode_isEnabled = False
@@ -43,13 +43,20 @@ def on_axis_moved(axis):
 def on_speed(button):
     global speedIndex
 
+    if button.name == "button_x": 
+        #Move forward
+        command = "F"
+    else: 
+        #Move backward
+        command = "B"
+
     if drive_mode_isEnabled:
-        arduino.write("M".encode())
+        arduino.write(f"{command}".encode())
         arduino.flush()
         arduino.write(f"{speeds[speedIndex]}".encode())
         arduino.flush()
         speedIndex = (1 + speedIndex) % 4
-        print(f"Speed shifted {speeds[speedIndex - 1]}")
+        print(f"Speed shifted {speeds[speedIndex - 1]} {(command)}")
 
 def main():
     try:
@@ -60,6 +67,7 @@ def main():
             #Actuator events
             controller.axis_r.when_moved = on_axis_moved 
             controller.button_x.when_pressed = on_speed
+            controller.button_y.when_pressed = on_speed
 
             signal.pause()
     except KeyboardInterrupt:

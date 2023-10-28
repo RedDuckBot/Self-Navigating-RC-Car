@@ -30,14 +30,15 @@ void loop() {
   int steer_angle, motor_speed;
 
   //Wait on drive data
+  //Get a command by reading one char
   while (!Serial.available());
   incoming_msg = Serial.read();
 
-  if (incoming_msg == 'M') {
-    //Update motor speed
+  if (incoming_msg == 'F' || incoming_msg == 'B') {
+    //Move forward or backward 
     motor_speed = Serial.parseInt();
-    moveForward(motor_speed);
-   }
+    motion(motor_speed,incoming_msg);
+   } 
 
   if (incoming_msg == 'S') {
     //Update steering angle
@@ -68,20 +69,19 @@ void control_servo(int angle)
 }
 
 //Parameter ---pwmSpeed is controller input
-void moveForward(int pwmSpeed)
+//Parameter ---command is forward or backward
+void motion(int pwmSpeed, char command)
 {
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW);
+  if (command == 'F') {
+    //Move forward
+    digitalWrite(in1, HIGH);
+    digitalWrite(in2, LOW);
+  } else {
+    //Move backward
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, HIGH);
+  }
   analogWrite(enA, pwmSpeed);
-  //Serial.println(new_pwmSpeed);
-  delay(250);
-}
-
-void moveBackward(int pwmSpeed)
-{
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  analogWrite(enA, new_pwmSpeed);
   delay(250);
 }
 
