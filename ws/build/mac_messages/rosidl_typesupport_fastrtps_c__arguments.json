@@ -1,0 +1,19 @@
+{
+  "package_name": "mac_messages",
+  "output_dir": "/mac_everything/ws/build/mac_messages/rosidl_typesupport_fastrtps_c/mac_messages",
+  "template_dir": "/opt/ros/iron/install/share/rosidl_typesupport_fastrtps_c/resource",
+  "idl_tuples": [
+    "/mac_everything/ws/build/mac_messages/rosidl_adapter/mac_messages:msg/Drive.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/install/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
+    "/opt/ros/iron/install/lib/python3.6/site-packages/rosidl_typesupport_fastrtps_c/__init__.py",
+    "/opt/ros/iron/install/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/install/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em",
+    "/opt/ros/iron/install/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/install/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
+    "/opt/ros/iron/install/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/iron/install/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
+    "/mac_everything/ws/build/mac_messages/rosidl_adapter/mac_messages/msg/Drive.idl"
+  ]
+}

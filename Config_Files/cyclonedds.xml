@@ -7,7 +7,7 @@
     <General>
       <Interfaces>
         <!-- WARNING: set this to the IP address that you can be reached at by your peers -->
-        <NetworkInterface address="192.168.1.132"/> 
+        <NetworkInterface address="10.60.111.19"/> 
       </Interfaces>
       <AllowMulticast>false</AllowMulticast>
       <MulticastRecvNetworkInterfaceAddresses>all</MulticastRecvNetworkInterfaceAddresses>
@@ -23,7 +23,7 @@
       <!-- list IP addresses of other systems you want to communicate with -->
       <Peers>
         <Peer Address="localhost"/>
-        <Peer Address="192.168.1.184" />
+        <Peer Address="10.60.126.57" />
       </Peers>
     </Discovery>
 

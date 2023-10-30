@@ -1,0 +1,7 @@
+{
+  "package_name": "mac_messages",
+  "output_dir": "/mac_everything/ws/build/mac_messages/rosidl_generator_type_description/mac_messages",
+  "idl_tuples": [
+    "/mac_everything/ws/build/mac_messages/rosidl_adapter/mac_messages:msg/Drive.idl"
+  ]
+}

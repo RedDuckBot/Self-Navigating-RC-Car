@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "manual_turtle_node = manual_control.turtle_node:main",
-            "manual_arduino_node = manual_control.controller_node:main", 
+            "arduino_node = manual_control.manual_arduino_node:main", 
         ],
     },
 )

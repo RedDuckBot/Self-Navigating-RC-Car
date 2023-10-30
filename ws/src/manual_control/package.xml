@@ -11,8 +11,8 @@
   <depend>geometry_msgs</depend>
   <depend>turtlesim</depend>
   <depend>serial</depend>
-  <depend>json</depend>
   <depend>sensor_msgs</depend>
+  <depend>mac_messages</depend>
   <depend>time</depend>
 
   <test_depend>ament_copyright</test_depend>

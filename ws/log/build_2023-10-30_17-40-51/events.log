@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.002970] (-) JobUnselected: {'identifier': 'mac_messages'}
+[0.003831] (manual_control) JobQueued: {'identifier': 'manual_control', 'dependencies': OrderedDict([('mac_messages', '/mac_everything/ws/install/mac_messages')])}
+[0.005358] (manual_control) JobStarted: {'identifier': 'manual_control'}
+[0.103172] (-) TimerEvent: {}
+[0.214444] (-) TimerEvent: {}
+[0.315497] (-) TimerEvent: {}
+[0.416630] (-) TimerEvent: {}
+[0.517366] (-) TimerEvent: {}
+[0.618181] (-) TimerEvent: {}
+[0.718947] (-) TimerEvent: {}
+[0.819776] (-) TimerEvent: {}
+[0.921172] (-) TimerEvent: {}
+[1.021971] (-) TimerEvent: {}
+[1.122767] (-) TimerEvent: {}
+[1.223571] (-) TimerEvent: {}
+[1.324409] (-) TimerEvent: {}
+[1.425154] (-) TimerEvent: {}
+[1.526806] (-) TimerEvent: {}
+[1.627598] (-) TimerEvent: {}
+[1.728582] (-) TimerEvent: {}
+[1.834586] (-) TimerEvent: {}
+[1.945435] (-) TimerEvent: {}
+[2.046411] (-) TimerEvent: {}
+[2.147154] (-) TimerEvent: {}
+[2.247919] (-) TimerEvent: {}
+[2.348712] (-) TimerEvent: {}
+[2.449485] (-) TimerEvent: {}
+[2.550247] (-) TimerEvent: {}
+[2.651004] (-) TimerEvent: {}
+[2.751753] (-) TimerEvent: {}
+[2.852553] (-) TimerEvent: {}
+[2.953309] (-) TimerEvent: {}
+[3.054073] (-) TimerEvent: {}
+[3.154829] (-) TimerEvent: {}
+[3.255577] (-) TimerEvent: {}
+[3.356507] (-) TimerEvent: {}
+[3.457274] (-) TimerEvent: {}
+[3.558025] (-) TimerEvent: {}
+[3.659715] (-) TimerEvent: {}
+[3.760569] (-) TimerEvent: {}
+[3.861542] (-) TimerEvent: {}
+[3.962267] (-) TimerEvent: {}
+[4.062982] (-) TimerEvent: {}
+[4.163746] (-) TimerEvent: {}
+[4.230304] (manual_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/mac_everything/ws/build/manual_control/build', '--no-deps', 'install_data'], 'cwd': '/mac_everything/ws/build/manual_control', 'env': {'OPENBLAS_CORETYPE': 'ARMV8', 'PYTHONIOENCODING': 'utf-8', 'HOSTNAME': 'macnav-bot', 'LD_LIBRARY_PATH': '/mac_everything/ws/install/mac_messages/lib:/opt/ros/iron/install/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib', 'SHLVL': '1', 'CYCLONEDDS_URI': '/tmp/cyclonedds.xml', 'HOME': '/root', 'OLDPWD': '/mac_everything', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/opt/ros/iron/install:/mac_everything/ws/install', 'ROS_DISTRO': 'iron', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'PKG_CONFIG_PATH': '/opt/ros/iron/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/iron/install/lib/pkgconfig', 'TERM': 'xterm', 'PATH': '/opt/ros/iron/install/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/iron', 'AMENT_PREFIX_PATH': '/mac_everything/ws/install/manual_control:/mac_everything/ws/install/mac_messages:/opt/ros/iron/install', 'ROS_DOMAIN_ID': '0', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/mac_everything/ws/build/manual_control', 'PYTHONPATH': '/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.6/site-packages:/mac_everything/ws/install/mac_messages/lib/python3.6/site-packages:/mac_everything/ws/build/manual_control:/mac_everything/ws/install/manual_control/lib/python3.6/site-packages:/opt/ros/iron/install/lib/python3.6/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/mac_everything/ws/install/mac_messages:/opt/ros/iron/install'}, 'shell': False}
+[4.263959] (-) TimerEvent: {}
+[4.364954] (-) TimerEvent: {}
+[4.465745] (-) TimerEvent: {}
+[4.566556] (-) TimerEvent: {}
+[4.667369] (-) TimerEvent: {}
+[4.768165] (-) TimerEvent: {}
+[4.868939] (-) TimerEvent: {}
+[4.969748] (-) TimerEvent: {}
+[5.070558] (-) TimerEvent: {}
+[5.171348] (-) TimerEvent: {}
+[5.272118] (-) TimerEvent: {}
+[5.372889] (-) TimerEvent: {}
+[5.473679] (-) TimerEvent: {}
+[5.574468] (-) TimerEvent: {}
+[5.675280] (-) TimerEvent: {}
+[5.716017] (manual_control) StdoutLine: {'line': b'running develop\n'}
+[5.775500] (-) TimerEvent: {}
+[5.876299] (-) TimerEvent: {}
+[5.977063] (-) TimerEvent: {}
+[6.077828] (-) TimerEvent: {}
+[6.178616] (-) TimerEvent: {}
+[6.279317] (-) TimerEvent: {}
+[6.380089] (-) TimerEvent: {}
+[6.480812] (-) TimerEvent: {}
+[6.481793] (manual_control) StdoutLine: {'line': b'running egg_info\n'}
+[6.482741] (manual_control) StdoutLine: {'line': b'writing manual_control.egg-info/PKG-INFO\n'}
+[6.484468] (manual_control) StdoutLine: {'line': b'writing dependency_links to manual_control.egg-info/dependency_links.txt\n'}
+[6.485440] (manual_control) StdoutLine: {'line': b'writing entry points to manual_control.egg-info/entry_points.txt\n'}
+[6.486332] (manual_control) StdoutLine: {'line': b'writing requirements to manual_control.egg-info/requires.txt\n'}
+[6.487173] (manual_control) StdoutLine: {'line': b'writing top-level names to manual_control.egg-info/top_level.txt\n'}
+[6.493320] (manual_control) StdoutLine: {'line': b"reading manifest file 'manual_control.egg-info/SOURCES.txt'\n"}
+[6.500249] (manual_control) StdoutLine: {'line': b"writing manifest file 'manual_control.egg-info/SOURCES.txt'\n"}
+[6.580984] (-) TimerEvent: {}
+[6.681758] (-) TimerEvent: {}
+[6.714730] (manual_control) StdoutLine: {'line': b'running build_ext\n'}
+[6.715769] (manual_control) StdoutLine: {'line': b'Creating /mac_everything/ws/install/manual_control/lib/python3.6/site-packages/manual-control.egg-link (link to .)\n'}
+[6.719390] (manual_control) StdoutLine: {'line': b'Installing arduino_node script to /mac_everything/ws/install/manual_control/lib/manual_control\n'}
+[6.720469] (manual_control) StdoutLine: {'line': b'Installing manual_turtle_node script to /mac_everything/ws/install/manual_control/lib/manual_control\n'}
+[6.721280] (manual_control) StdoutLine: {'line': b'\n'}
+[6.721828] (manual_control) StdoutLine: {'line': b'Installed /mac_everything/ws/build/manual_control\n'}
+[6.722476] (manual_control) StdoutLine: {'line': b'running install_data\n'}
+[6.782022] (-) TimerEvent: {}
+[6.862710] (manual_control) CommandEnded: {'returncode': 0}
+[6.887385] (-) TimerEvent: {}
+[7.004363] (-) TimerEvent: {}
+[7.108302] (-) TimerEvent: {}
+[7.140540] (manual_control) JobEnded: {'identifier': 'manual_control', 'rc': 0}
+[7.145228] (-) EventReactorShutdown: {}

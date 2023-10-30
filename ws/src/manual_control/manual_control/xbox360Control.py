@@ -2,7 +2,10 @@
 import signal, serial, time
 from xbox360controller import Xbox360Controller
 
-"""Not a Node script rather just a script that passes xbox input to Arduino"""
+"""
+    Not a Node script rather just a script that passes xbox input to Arduino.
+    This setup involves plugging the xbox controller directly into the Nano
+"""
 
 arduino = serial.Serial(port="/dev/ttyACM0",baudrate=115200)
 

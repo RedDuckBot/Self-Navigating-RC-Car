@@ -1,0 +1,6 @@
+{
+  "package_name": "mac_messages",
+  "non_idl_tuples": [
+    "/mac_everything/ws/src/mac_messages:msg/Drive.msg"
+  ]
+}

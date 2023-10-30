@@ -1,0 +1,36 @@
+{
+  "package_name": "mac_messages",
+  "output_dir": "/mac_everything/ws/build/mac_messages/rosidl_generator_c/mac_messages",
+  "template_dir": "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/mac_everything/ws/build/mac_messages/rosidl_adapter/mac_messages:msg/Drive.idl"
+  ],
+  "ros_interface_files": [
+    "/mac_everything/ws/src/mac_messages/msg/Drive.msg"
+  ],
+  "target_dependencies": [
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../../../lib/python3.6/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/iron/install/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/mac_everything/ws/build/mac_messages/rosidl_adapter/mac_messages/msg/Drive.idl"
+  ],
+  "type_description_tuples": [
+    "msg/Drive.idl:/mac_everything/ws/build/mac_messages/rosidl_generator_type_description/mac_messages/msg/Drive.json"
+  ]
+}

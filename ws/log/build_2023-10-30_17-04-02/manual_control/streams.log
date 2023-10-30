@@ -1,0 +1,19 @@
+[4.089s] Invoking command in '/mac_everything/ws/build/manual_control': LD_LIBRARY_PATH=/mac_everything/ws/install/mac_messages/lib:/opt/ros/iron/install/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/manual_control/build --no-deps install_data
+[5.572s] running develop
+[6.316s] running egg_info
+[6.317s] writing manual_control.egg-info/PKG-INFO
+[6.318s] writing dependency_links to manual_control.egg-info/dependency_links.txt
+[6.319s] writing entry points to manual_control.egg-info/entry_points.txt
+[6.319s] writing requirements to manual_control.egg-info/requires.txt
+[6.320s] writing top-level names to manual_control.egg-info/top_level.txt
+[6.327s] reading manifest file 'manual_control.egg-info/SOURCES.txt'
+[6.334s] writing manifest file 'manual_control.egg-info/SOURCES.txt'
+[6.548s] running build_ext
+[6.550s] Creating /mac_everything/ws/install/manual_control/lib/python3.6/site-packages/manual-control.egg-link (link to .)
+[6.554s] Installing arduino_node script to /mac_everything/ws/install/manual_control/lib/manual_control
+[6.555s] Installing manual_turtle_node script to /mac_everything/ws/install/manual_control/lib/manual_control
+[6.555s] 
+[6.556s] Installed /mac_everything/ws/build/manual_control
+[6.556s] running install_data
+[6.557s] copying package.xml -> /mac_everything/ws/install/manual_control/share/manual_control
+[6.695s] Invoked command in '/mac_everything/ws/build/manual_control' returned '0': LD_LIBRARY_PATH=/mac_everything/ws/install/mac_messages/lib:/opt/ros/iron/install/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/mac_everything/ws/build/manual_control/prefix_override:/mac_everything/ws/install/manual_control/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /mac_everything/ws/build/manual_control/build --no-deps install_data

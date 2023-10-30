@@ -9,6 +9,7 @@ setup.py
 ../../build/manual_control/manual_control.egg-info/top_level.txt
 ../../build/manual_control/manual_control.egg-info/zip-safe
 manual_control/__init__.py
+manual_control/manual_arduino_node.py
 manual_control/turtle_node.py
 manual_control/xbox360Control.py
 manual_control.egg-info/PKG-INFO

@@ -11,7 +11,7 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ENV CYCLONEDDS_URI=/tmp/cyclonedds.xml
 ENV ROS_DOMAIN_ID=0
 
-RUN apt-get update
+#RUN apt-get update
 
 #Install packages
 RUN apt-get install -y apt-utils
