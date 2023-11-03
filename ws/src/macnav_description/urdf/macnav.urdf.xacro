@@ -2,7 +2,11 @@
 <robot name="macnav" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:include filename="common_properties.xacro" />
+<<<<<<< HEAD
     <xacro:include filename="macnav_base.xacro" />
     <xacro:include filename="macnav_lidar.xacro"/>
+=======
+    <xacro:include filename="macnav.xacro" />
+>>>>>>> 12dae00a0c536b2e3cf805fae25f64fdce2a2b12
 
 </robot>

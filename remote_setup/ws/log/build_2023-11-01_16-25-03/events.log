@@ -1,0 +1,112 @@
+[0.000000] (-) TimerEvent: {}
+[0.000261] (mac_messages) JobQueued: {'identifier': 'mac_messages', 'dependencies': OrderedDict()}
+[0.000354] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.000436] (manual_control) JobQueued: {'identifier': 'manual_control', 'dependencies': OrderedDict([('mac_messages', '/mac_remote/ws/install/mac_messages')])}
+[0.000664] (mac_messages) JobStarted: {'identifier': 'mac_messages'}
+[0.086994] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.099280] (-) TimerEvent: {}
+[0.183984] (mac_messages) JobProgress: {'identifier': 'mac_messages', 'progress': 'cmake'}
+[0.184421] (mac_messages) Command: {'cmd': ['/usr/bin/cmake', '/mac_remote/ws/src/mac_messages', '-DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/mac_messages'], 'cwd': '/mac_remote/ws/build/mac_messages', 'env': OrderedDict([('HOSTNAME', 'iThinkPad4Iam'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/mac_remote/ws/build/mac_messages'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.190279] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.190896] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '/mac_remote/ws/src/rplidar_ros', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/rplidar_ros'], 'cwd': '/mac_remote/ws/build/rplidar_ros', 'env': OrderedDict([('HOSTNAME', 'iThinkPad4Iam'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/mac_remote/ws/build/rplidar_ros'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.199383] (-) TimerEvent: {}
+[0.217479] (rplidar_ros) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.217972] (rplidar_ros) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.219882] (rplidar_ros) StderrLine: {'line': b'  CMake.\n'}
+[0.220290] (rplidar_ros) StderrLine: {'line': b'\n'}
+[0.220630] (rplidar_ros) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.221073] (rplidar_ros) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.221274] (rplidar_ros) StderrLine: {'line': b'\n'}
+[0.221436] (rplidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[0.299524] (-) TimerEvent: {}
+[0.375424] (mac_messages) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.382796] (rplidar_ros) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.399682] (-) TimerEvent: {}
+[0.500275] (-) TimerEvent: {}
+[0.547863] (mac_messages) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.552888] (rplidar_ros) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.566542] (mac_messages) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.570377] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.600410] (-) TimerEvent: {}
+[0.686970] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.688219] (mac_messages) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.700512] (-) TimerEvent: {}
+[0.706250] (mac_messages) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.707143] (mac_messages) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.708066] (rplidar_ros) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.708413] (mac_messages) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.708680] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.709680] (rplidar_ros) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.717450] (mac_messages) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.719627] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.805132] (-) TimerEvent: {}
+[0.856055] (mac_messages) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.856389] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.874781] (mac_messages) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.875407] (mac_messages) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.876353] (mac_messages) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.877519] (rplidar_ros) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.878280] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.879864] (rplidar_ros) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.885092] (mac_messages) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.905239] (-) TimerEvent: {}
+[0.908099] (rplidar_ros) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:16 (find_package):\n'}
+[0.908440] (rplidar_ros) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.908619] (rplidar_ros) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.908785] (rplidar_ros) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.908954] (rplidar_ros) StderrLine: {'line': b'\n'}
+[0.909107] (rplidar_ros) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.909262] (rplidar_ros) StderrLine: {'line': b'  of the following names:\n'}
+[0.909410] (rplidar_ros) StderrLine: {'line': b'\n'}
+[0.909564] (rplidar_ros) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.909722] (rplidar_ros) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.909871] (rplidar_ros) StderrLine: {'line': b'\n'}
+[0.910025] (rplidar_ros) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.910188] (rplidar_ros) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.910340] (rplidar_ros) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.910496] (rplidar_ros) StderrLine: {'line': b'  installed.\n'}
+[0.910647] (rplidar_ros) StderrLine: {'line': b'\n'}
+[0.910792] (rplidar_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[0.910943] (rplidar_ros) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.912734] (rplidar_ros) StdoutLine: {'line': b'See also "/mac_remote/ws/build/rplidar_ros/CMakeFiles/CMakeOutput.log".\n'}
+[0.914899] (rplidar_ros) CommandEnded: {'returncode': 1}
+[0.989016] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 1}
+[1.006183] (-) TimerEvent: {}
+[1.107273] (-) TimerEvent: {}
+[1.207704] (-) TimerEvent: {}
+[1.215518] (mac_messages) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[1.307830] (-) TimerEvent: {}
+[1.390559] (mac_messages) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.395856] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.407966] (-) TimerEvent: {}
+[1.408281] (mac_messages) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.489159] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.508133] (-) TimerEvent: {}
+[1.608520] (-) TimerEvent: {}
+[1.708863] (-) TimerEvent: {}
+[1.809272] (-) TimerEvent: {}
+[1.909648] (-) TimerEvent: {}
+[1.925170] (mac_messages) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.009763] (-) TimerEvent: {}
+[2.110139] (-) TimerEvent: {}
+[2.194249] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.210239] (-) TimerEvent: {}
+[2.310595] (-) TimerEvent: {}
+[2.411059] (-) TimerEvent: {}
+[2.511453] (-) TimerEvent: {}
+[2.526176] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.561944] (mac_messages) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.565402] (mac_messages) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.598895] (mac_messages) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.599223] (mac_messages) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.599394] (mac_messages) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.599540] (mac_messages) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.611586] (-) TimerEvent: {}
+[2.632709] (mac_messages) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.694013] (mac_messages) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.711704] (-) TimerEvent: {}
+[2.745490] (mac_messages) StdoutLine: {'line': b'-- Generating done\n'}
+[2.749102] (mac_messages) StdoutLine: {'line': b'-- Build files have been written to: /mac_remote/ws/build/mac_messages\n'}
+[2.756548] (mac_messages) JobEnded: {'identifier': 'mac_messages', 'rc': 'SIGINT'}
+[2.767701] (manual_control) JobSkipped: {'identifier': 'manual_control'}
+[2.767818] (-) EventReactorShutdown: {}

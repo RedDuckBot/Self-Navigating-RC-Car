@@ -1,0 +1,4 @@
+Invoking command in '/mac_remote/ws/build/mac_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mac_remote/ws/build/mac_messages -- -j4 -l4
+Invoked command in '/mac_remote/ws/build/mac_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mac_remote/ws/build/mac_messages -- -j4 -l4
+Invoking command in '/mac_remote/ws/build/mac_messages': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mac_remote/ws/build/mac_messages
+Invoked command in '/mac_remote/ws/build/mac_messages' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mac_remote/ws/build/mac_messages

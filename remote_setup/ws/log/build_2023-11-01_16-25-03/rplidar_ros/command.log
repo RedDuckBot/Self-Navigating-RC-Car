@@ -1,0 +1,2 @@
+Invoking command in '/mac_remote/ws/build/rplidar_ros': /usr/bin/cmake /mac_remote/ws/src/rplidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/rplidar_ros
+Invoked command in '/mac_remote/ws/build/rplidar_ros' returned '1': /usr/bin/cmake /mac_remote/ws/src/rplidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/rplidar_ros
