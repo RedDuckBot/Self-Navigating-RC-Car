@@ -1,0 +1,1 @@
+Invoking command in '/mac_remote/ws/build/mac_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mac_remote/ws/src/mac_messages -DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/mac_messages

@@ -1,0 +1,8 @@
+setup.py
+mac_messages/__init__.py
+mac_messages.egg-info/PKG-INFO
+mac_messages.egg-info/SOURCES.txt
+mac_messages.egg-info/dependency_links.txt
+mac_messages.egg-info/top_level.txt
+mac_messages/msg/__init__.py
+mac_messages/msg/_drive.py
