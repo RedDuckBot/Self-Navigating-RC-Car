@@ -16,7 +16,7 @@ fi
 _colcon_package_zsh_source_script() {
   if [ -f "$1" ]; then
     if [ -n "$COLCON_TRACE" ]; then
-      echo ". \"$1\""
+      echo "# . \"$1\""
     fi
     . "$@"
   else
@@ -37,14 +37,6 @@ colcon_zsh_convert_to_array() {
 # source sh script of this package
 _colcon_package_zsh_source_script "$_colcon_package_zsh_COLCON_CURRENT_PREFIX/share/mac_messages/package.sh"
 unset convert_zsh_to_array
-
-# setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced scripts
-COLCON_CURRENT_PREFIX="$_colcon_package_zsh_COLCON_CURRENT_PREFIX"
-
-# source zsh hooks
-_colcon_package_zsh_source_script "$COLCON_CURRENT_PREFIX/share/mac_messages/local_setup.zsh"
-
-unset COLCON_CURRENT_PREFIX
 
 unset _colcon_package_zsh_source_script
 unset _colcon_package_zsh_COLCON_CURRENT_PREFIX

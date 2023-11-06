@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     
-<<<<<<< HEAD
 
 
     <xacro:property name="chassis_length" value="0.370" />
@@ -10,8 +9,6 @@
     <xacro:property name="wheel_radius" value="0.041" />
     <xacro:property name="wheel_length" value="0.032" />
 
-=======
->>>>>>> 12dae00a0c536b2e3cf805fae25f64fdce2a2b12
     <material name="red">
         <color rgba="0.5 0 0 1"/>
     </material>

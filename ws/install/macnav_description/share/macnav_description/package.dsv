@@ -1,0 +1,8 @@
+source;share/macnav_description/hook/cmake_prefix_path.ps1
+source;share/macnav_description/hook/cmake_prefix_path.dsv
+source;share/macnav_description/hook/cmake_prefix_path.sh
+source;share/macnav_description/local_setup.bash
+source;share/macnav_description/local_setup.dsv
+source;share/macnav_description/local_setup.ps1
+source;share/macnav_description/local_setup.sh
+source;share/macnav_description/local_setup.zsh

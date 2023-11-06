@@ -1,0 +1,6 @@
+[1.628s] Invoking command in '/home/dan/MacEwan-Navigation-Bot/ws/build/macnav_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dan/MacEwan-Navigation-Bot/ws/src/macnav_description -DCMAKE_INSTALL_PREFIX=/home/dan/MacEwan-Navigation-Bot/ws/install/macnav_description
+[1.639s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.147s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.212s] -- Configuring done
+[2.214s] -- Generating done
+[2.585s] -- Build files have been written to: /home/dan/MacEwan-Navigation-Bot/ws/build/macnav_description
