@@ -1,0 +1,4 @@
+ws/log/
+ws/build/
+ws/install/
+*.pyc
