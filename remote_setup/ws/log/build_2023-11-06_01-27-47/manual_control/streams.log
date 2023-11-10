@@ -1,0 +1,29 @@
+[1.674s] Invoking command in '/mac_remote/ws/build/manual_control': PYTHONPATH=/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /mac_remote/ws/build/manual_control/build
+[1.907s] running develop
+[2.036s] Removing /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual-control.egg-link (link to .)
+[2.059s] Invoked command in '/mac_remote/ws/build/manual_control' returned '0': PYTHONPATH=/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /mac_remote/ws/build/manual_control/build
+[2.061s] Invoking command in '/mac_remote/ws/src/manual_control': PYTHONPATH=/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/manual_control build --build-base /mac_remote/ws/build/manual_control/build install --record /mac_remote/ws/build/manual_control/install.log --single-version-externally-managed
+[2.285s] running egg_info
+[2.286s] writing ../../build/manual_control/manual_control.egg-info/PKG-INFO
+[2.749s] writing dependency_links to ../../build/manual_control/manual_control.egg-info/dependency_links.txt
+[3.083s] writing entry points to ../../build/manual_control/manual_control.egg-info/entry_points.txt
+[3.379s] writing requirements to ../../build/manual_control/manual_control.egg-info/requires.txt
+[3.670s] writing top-level names to ../../build/manual_control/manual_control.egg-info/top_level.txt
+[3.950s] reading manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+[3.951s] writing manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+[4.497s] running build
+[4.498s] running build_py
+[4.499s] running install
+[4.499s] running install_lib
+[4.499s] creating /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control
+[4.500s] copying /mac_remote/ws/build/manual_control/build/lib/manual_control/manual_node.py -> /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control
+[4.500s] copying /mac_remote/ws/build/manual_control/build/lib/manual_control/__init__.py -> /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control
+[4.501s] byte-compiling /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control/manual_node.py to manual_node.cpython-310.pyc
+[4.503s] byte-compiling /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control/__init__.py to __init__.cpython-310.pyc
+[4.503s] running install_data
+[4.504s] running install_egg_info
+[4.506s] Copying ../../build/manual_control/manual_control.egg-info to /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control-0.0.0-py3.10.egg-info
+[4.507s] running install_scripts
+[4.526s] Installing manual_control_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+[5.030s] writing list of installed files to '/mac_remote/ws/build/manual_control/install.log'
+[5.084s] Invoked command in '/mac_remote/ws/src/manual_control' returned '0': PYTHONPATH=/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/manual_control build --build-base /mac_remote/ws/build/manual_control/build install --record /mac_remote/ws/build/manual_control/install.log --single-version-externally-managed

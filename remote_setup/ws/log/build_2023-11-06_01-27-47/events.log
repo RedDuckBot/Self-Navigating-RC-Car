@@ -1,0 +1,441 @@
+[0.000000] (-) TimerEvent: {}
+[0.000196] (mac_messages) JobQueued: {'identifier': 'mac_messages', 'dependencies': OrderedDict()}
+[0.000279] (manual_control) JobQueued: {'identifier': 'manual_control', 'dependencies': OrderedDict([('mac_messages', '/mac_remote/ws/install/mac_messages')])}
+[0.000338] (mac_messages) JobStarted: {'identifier': 'mac_messages'}
+[0.099418] (-) TimerEvent: {}
+[0.107572] (mac_messages) JobProgress: {'identifier': 'mac_messages', 'progress': 'cmake'}
+[0.108161] (mac_messages) JobProgress: {'identifier': 'mac_messages', 'progress': 'build'}
+[0.109091] (mac_messages) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mac_remote/ws/build/mac_messages', '--', '-j12', '-l12'], 'cwd': '/mac_remote/ws/build/mac_messages', 'env': OrderedDict([('HOSTNAME', 'dan-Strix-17-GL703GE'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mac_remote/ws/install/manual_control:/mac_remote/ws/install/mac_messages:/opt/ros/humble'), ('PWD', '/mac_remote/ws/build/mac_messages'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mac_remote/ws/build/manual_control:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[0.199586] (-) TimerEvent: {}
+[0.300242] (-) TimerEvent: {}
+[0.400909] (-) TimerEvent: {}
+[0.501558] (-) TimerEvent: {}
+[0.602191] (-) TimerEvent: {}
+[0.702752] (-) TimerEvent: {}
+[0.802975] (mac_messages) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.803619] (-) TimerEvent: {}
+[0.904198] (-) TimerEvent: {}
+[1.004746] (-) TimerEvent: {}
+[1.105155] (-) TimerEvent: {}
+[1.205557] (-) TimerEvent: {}
+[1.305941] (-) TimerEvent: {}
+[1.314423] (mac_messages) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.324614] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.346766] (mac_messages) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.406047] (-) TimerEvent: {}
+[1.485183] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.506247] (-) TimerEvent: {}
+[1.606757] (-) TimerEvent: {}
+[1.707115] (-) TimerEvent: {}
+[1.807361] (-) TimerEvent: {}
+[1.904566] (mac_messages) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.907557] (-) TimerEvent: {}
+[2.007790] (-) TimerEvent: {}
+[2.082206] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.107902] (-) TimerEvent: {}
+[2.208248] (-) TimerEvent: {}
+[2.308763] (-) TimerEvent: {}
+[2.380498] (mac_messages) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.409006] (-) TimerEvent: {}
+[2.427473] (mac_messages) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.509232] (-) TimerEvent: {}
+[2.531025] (mac_messages) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.531202] (mac_messages) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.531281] (mac_messages) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.559450] (mac_messages) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.592980] (mac_messages) StdoutLine: {'line': b'-- Generating done\n'}
+[2.604279] (mac_messages) StdoutLine: {'line': b'-- Build files have been written to: /mac_remote/ws/build/mac_messages\n'}
+[2.609349] (-) TimerEvent: {}
+[2.673558] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_generator_c\x1b[0m\n'}
+[2.684769] (mac_messages) StdoutLine: {'line': b'[  3%] Built target mac_messages__cpp\n'}
+[2.686826] (mac_messages) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mac_messages__rosidl_generator_c.dir/rosidl_generator_c/mac_messages/msg/detail/drive__functions.c.o\x1b[0m\n'}
+[2.698250] (mac_messages) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_mac_messages\n'}
+[2.699065] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.700531] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.700804] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.709510] (-) TimerEvent: {}
+[2.719492] (mac_messages) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/mac_messages__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mac_messages/msg/drive__type_support.cpp.o\x1b[0m\n'}
+[2.720404] (mac_messages) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/mac_messages__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mac_messages/msg/detail/drive__type_support.cpp.o\x1b[0m\n'}
+[2.721178] (mac_messages) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/mac_messages__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mac_messages/msg/detail/dds_fastrtps/drive__type_support.cpp.o\x1b[0m\n'}
+[2.809561] (-) TimerEvent: {}
+[2.909850] (-) TimerEvent: {}
+[2.952568] (mac_messages) StdoutLine: {'line': b'running egg_info\n'}
+[2.953116] (mac_messages) StdoutLine: {'line': b'writing mac_messages.egg-info/PKG-INFO\n'}
+[2.953297] (mac_messages) StdoutLine: {'line': b'writing dependency_links to mac_messages.egg-info/dependency_links.txt\n'}
+[2.953463] (mac_messages) StdoutLine: {'line': b'writing top-level names to mac_messages.egg-info/top_level.txt\n'}
+[2.955266] (mac_messages) StdoutLine: {'line': b"reading manifest file 'mac_messages.egg-info/SOURCES.txt'\n"}
+[2.955900] (mac_messages) StdoutLine: {'line': b"writing manifest file 'mac_messages.egg-info/SOURCES.txt'\n"}
+[2.981087] (mac_messages) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_build_mac_messages_egg\n'}
+[3.010084] (-) TimerEvent: {}
+[3.110442] (-) TimerEvent: {}
+[3.211076] (-) TimerEvent: {}
+[3.311461] (-) TimerEvent: {}
+[3.412148] (-) TimerEvent: {}
+[3.512803] (-) TimerEvent: {}
+[3.613454] (-) TimerEvent: {}
+[4.145958] (-) TimerEvent: {}
+[4.246862] (-) TimerEvent: {}
+[4.347499] (-) TimerEvent: {}
+[4.448149] (-) TimerEvent: {}
+[4.548794] (-) TimerEvent: {}
+[4.649426] (-) TimerEvent: {}
+[4.750118] (-) TimerEvent: {}
+[4.850767] (-) TimerEvent: {}
+[4.951547] (-) TimerEvent: {}
+[5.052214] (-) TimerEvent: {}
+[5.152890] (-) TimerEvent: {}
+[5.253520] (-) TimerEvent: {}
+[5.354158] (-) TimerEvent: {}
+[5.454806] (-) TimerEvent: {}
+[5.555467] (-) TimerEvent: {}
+[5.656172] (-) TimerEvent: {}
+[5.756828] (-) TimerEvent: {}
+[5.857503] (-) TimerEvent: {}
+[5.958141] (-) TimerEvent: {}
+[6.058807] (-) TimerEvent: {}
+[6.159458] (-) TimerEvent: {}
+[6.260392] (-) TimerEvent: {}
+[6.361245] (-) TimerEvent: {}
+[6.461900] (-) TimerEvent: {}
+[6.562553] (-) TimerEvent: {}
+[6.663232] (-) TimerEvent: {}
+[6.763938] (-) TimerEvent: {}
+[6.864614] (-) TimerEvent: {}
+[6.965247] (-) TimerEvent: {}
+[7.065914] (-) TimerEvent: {}
+[7.166592] (-) TimerEvent: {}
+[7.267255] (-) TimerEvent: {}
+[7.367941] (-) TimerEvent: {}
+[7.468859] (-) TimerEvent: {}
+[7.569498] (-) TimerEvent: {}
+[7.670171] (-) TimerEvent: {}
+[7.770601] (-) TimerEvent: {}
+[7.871258] (-) TimerEvent: {}
+[7.971927] (-) TimerEvent: {}
+[8.072343] (-) TimerEvent: {}
+[8.172981] (-) TimerEvent: {}
+[8.273668] (-) TimerEvent: {}
+[8.374325] (-) TimerEvent: {}
+[8.475019] (-) TimerEvent: {}
+[8.575626] (-) TimerEvent: {}
+[8.676276] (-) TimerEvent: {}
+[8.776944] (-) TimerEvent: {}
+[9.805790] (-) TimerEvent: {}
+[9.906532] (-) TimerEvent: {}
+[10.007372] (-) TimerEvent: {}
+[10.108068] (-) TimerEvent: {}
+[10.208755] (-) TimerEvent: {}
+[10.309412] (-) TimerEvent: {}
+[10.410066] (-) TimerEvent: {}
+[10.510719] (-) TimerEvent: {}
+[10.611416] (-) TimerEvent: {}
+[10.712072] (-) TimerEvent: {}
+[10.812711] (-) TimerEvent: {}
+[10.913379] (-) TimerEvent: {}
+[11.014062] (-) TimerEvent: {}
+[11.114894] (-) TimerEvent: {}
+[11.215532] (-) TimerEvent: {}
+[11.316183] (-) TimerEvent: {}
+[11.416857] (-) TimerEvent: {}
+[11.517436] (-) TimerEvent: {}
+[11.617794] (-) TimerEvent: {}
+[11.718344] (-) TimerEvent: {}
+[11.818983] (-) TimerEvent: {}
+[11.919400] (-) TimerEvent: {}
+[12.019814] (-) TimerEvent: {}
+[12.120467] (-) TimerEvent: {}
+[12.221051] (-) TimerEvent: {}
+[12.321691] (-) TimerEvent: {}
+[12.422295] (-) TimerEvent: {}
+[12.522726] (-) TimerEvent: {}
+[12.623029] (-) TimerEvent: {}
+[12.723374] (-) TimerEvent: {}
+[12.823932] (-) TimerEvent: {}
+[12.856033] (mac_messages) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libmac_messages__rosidl_generator_c.so\x1b[0m\n'}
+[12.923992] (-) TimerEvent: {}
+[13.024487] (-) TimerEvent: {}
+[13.124766] (-) TimerEvent: {}
+[13.225067] (-) TimerEvent: {}
+[13.325435] (-) TimerEvent: {}
+[13.361502] (mac_messages) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX shared library libmac_messages__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[13.425524] (-) TimerEvent: {}
+[13.460350] (mac_messages) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX shared library libmac_messages__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.475348] (mac_messages) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libmac_messages__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.525688] (-) TimerEvent: {}
+[13.543954] (mac_messages) StdoutLine: {'line': b'[ 32%] Built target mac_messages__rosidl_typesupport_cpp\n'}
+[13.546228] (mac_messages) StdoutLine: {'line': b'[ 35%] Built target mac_messages__rosidl_generator_c\n'}
+[13.555237] (mac_messages) StdoutLine: {'line': b'[ 38%] Built target mac_messages__rosidl_typesupport_introspection_cpp\n'}
+[13.560428] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_c\x1b[0m\n'}
+[13.560689] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[13.560846] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[13.576189] (mac_messages) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/mac_messages__rosidl_typesupport_c.dir/rosidl_typesupport_c/mac_messages/msg/drive__type_support.cpp.o\x1b[0m\n'}
+[13.576468] (mac_messages) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/mac_messages__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mac_messages/msg/detail/drive__type_support.c.o\x1b[0m\n'}
+[13.579093] (mac_messages) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/mac_messages__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mac_messages/msg/detail/drive__type_support_c.cpp.o\x1b[0m\n'}
+[13.619557] (mac_messages) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libmac_messages__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.622043] (mac_messages) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libmac_messages__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[13.625791] (-) TimerEvent: {}
+[13.633823] (mac_messages) StdoutLine: {'line': b'[ 58%] Built target mac_messages__rosidl_typesupport_fastrtps_cpp\n'}
+[13.659251] (mac_messages) StdoutLine: {'line': b'[ 61%] Built target mac_messages__rosidl_typesupport_introspection_c\n'}
+[13.668361] (mac_messages) StdoutLine: {'line': b'[ 64%] Built target mac_messages__rosidl_typesupport_c\n'}
+[13.725988] (-) TimerEvent: {}
+[13.826344] (-) TimerEvent: {}
+[13.926681] (-) TimerEvent: {}
+[14.026916] (-) TimerEvent: {}
+[14.034721] (mac_messages) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libmac_messages__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.111083] (mac_messages) StdoutLine: {'line': b'[ 70%] Built target mac_messages__rosidl_typesupport_fastrtps_c\n'}
+[14.127066] (-) TimerEvent: {}
+[14.130951] (mac_messages) StdoutLine: {'line': b'[ 70%] Built target mac_messages\n'}
+[14.151507] (mac_messages) StdoutLine: {'line': b'[ 74%] Built target mac_messages__py\n'}
+[14.163880] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_generator_py\x1b[0m\n'}
+[14.178831] (mac_messages) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/mac_messages__rosidl_generator_py.dir/rosidl_generator_py/mac_messages/msg/_drive_s.c.o\x1b[0m\n'}
+[14.227254] (-) TimerEvent: {}
+[14.327830] (-) TimerEvent: {}
+[14.428220] (-) TimerEvent: {}
+[14.528862] (-) TimerEvent: {}
+[14.629517] (-) TimerEvent: {}
+[14.730142] (-) TimerEvent: {}
+[14.830676] (-) TimerEvent: {}
+[14.843031] (mac_messages) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mac_messages/libmac_messages__rosidl_generator_py.so\x1b[0m\n'}
+[14.884964] (mac_messages) StdoutLine: {'line': b'[ 80%] Built target mac_messages__rosidl_generator_py\n'}
+[14.896269] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[14.896490] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[14.896622] (mac_messages) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mac_messages__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[14.913416] (mac_messages) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/mac_messages__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/mac_messages/_mac_messages_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.913611] (mac_messages) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/mac_messages__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mac_messages/_mac_messages_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.913701] (mac_messages) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/mac_messages__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mac_messages/_mac_messages_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.930808] (-) TimerEvent: {}
+[15.023377] (mac_messages) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mac_messages/mac_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.023946] (mac_messages) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mac_messages/mac_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.030923] (mac_messages) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mac_messages/mac_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[15.031092] (-) TimerEvent: {}
+[15.065185] (mac_messages) StdoutLine: {'line': b'[100%] Built target mac_messages__rosidl_typesupport_introspection_c__pyext\n'}
+[15.065474] (mac_messages) StdoutLine: {'line': b'[100%] Built target mac_messages__rosidl_typesupport_c__pyext\n'}
+[15.073551] (mac_messages) StdoutLine: {'line': b'[100%] Built target mac_messages__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.085092] (mac_messages) CommandEnded: {'returncode': 0}
+[15.131203] (-) TimerEvent: {}
+[15.146500] (mac_messages) JobProgress: {'identifier': 'mac_messages', 'progress': 'install'}
+[15.155439] (mac_messages) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mac_remote/ws/build/mac_messages'], 'cwd': '/mac_remote/ws/build/mac_messages', 'env': OrderedDict([('HOSTNAME', 'dan-Strix-17-GL703GE'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mac_remote/ws/install/manual_control:/mac_remote/ws/install/mac_messages:/opt/ros/humble'), ('PWD', '/mac_remote/ws/build/mac_messages'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mac_remote/ws/build/manual_control:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[15.164964] (mac_messages) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.165195] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/ament_index/resource_index/rosidl_interfaces/mac_messages\n'}
+[15.165327] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages\n'}
+[15.165437] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg\n'}
+[15.165550] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail\n'}
+[15.165618] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__functions.c\n'}
+[15.165683] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__functions.h\n'}
+[15.165747] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__type_support.h\n'}
+[15.165838] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__struct.h\n'}
+[15.165902] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.165967] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/drive.h\n'}
+[15.166030] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/library_path.sh\n'}
+[15.166093] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/library_path.dsv\n'}
+[15.166241] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_generator_c.so\n'}
+[15.166745] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_generator_c.so" to ""\n'}
+[15.166874] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages\n'}
+[15.166990] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg\n'}
+[15.167061] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail\n'}
+[15.167145] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__rosidl_typesupport_fastrtps_c.h\n'}
+[15.167217] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.167305] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_fastrtps_c.so\n'}
+[15.167862] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.167939] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages\n'}
+[15.168057] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg\n'}
+[15.168159] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail\n'}
+[15.168240] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__type_support.c\n'}
+[15.168297] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__rosidl_typesupport_introspection_c.h\n'}
+[15.168354] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.168451] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_introspection_c.so\n'}
+[15.169023] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.169286] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_c.so\n'}
+[15.169944] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_c.so" to ""\n'}
+[15.170116] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages\n'}
+[15.170275] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg\n'}
+[15.170449] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail\n'}
+[15.170564] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__builder.hpp\n'}
+[15.170745] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__traits.hpp\n'}
+[15.170839] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__struct.hpp\n'}
+[15.170901] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/drive.hpp\n'}
+[15.170963] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages\n'}
+[15.171023] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg\n'}
+[15.171084] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.171172] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail\n'}
+[15.171230] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.171295] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/dds_fastrtps\n'}
+[15.171398] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.171689] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.171904] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages\n'}
+[15.172048] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg\n'}
+[15.172134] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail\n'}
+[15.172270] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__type_support.cpp\n'}
+[15.172341] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/include/mac_messages/mac_messages/msg/detail/drive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.172502] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_introspection_cpp.so\n'}
+[15.173041] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.173288] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_cpp.so\n'}
+[15.173770] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_typesupport_cpp.so" to ""\n'}
+[15.174015] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/pythonpath.sh\n'}
+[15.174153] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/pythonpath.dsv\n'}
+[15.174313] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages-0.0.0-py3.10.egg-info\n'}
+[15.174375] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.174479] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[15.174637] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.174824] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[15.175083] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages\n'}
+[15.175174] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/_mac_messages_s.ep.rosidl_typesupport_c.c\n'}
+[15.175260] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/msg\n'}
+[15.175378] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/msg/_drive_s.c\n'}
+[15.175459] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/msg/__init__.py\n'}
+[15.175520] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/msg/_drive.py\n'}
+[15.175620] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.175693] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.175776] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/libmac_messages__rosidl_generator_py.so\n'}
+[15.175956] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/_mac_messages_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.176109] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/__init__.py\n'}
+[15.176201] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/_mac_messages_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.176318] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.209235] (mac_messages) StdoutLine: {'line': b"Listing '/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages'...\n"}
+[15.209386] (mac_messages) StdoutLine: {'line': b"Compiling '/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/__init__.py'...\n"}
+[15.209454] (mac_messages) StdoutLine: {'line': b"Listing '/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/msg'...\n"}
+[15.209516] (mac_messages) StdoutLine: {'line': b"Compiling '/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/msg/__init__.py'...\n"}
+[15.209576] (mac_messages) StdoutLine: {'line': b"Compiling '/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/msg/_drive.py'...\n"}
+[15.213368] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.213797] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.214072] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.214543] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.214813] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.215320] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages/mac_messages/mac_messages_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.215659] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_generator_py.so\n'}
+[15.216232] (mac_messages) StdoutLine: {'line': b'-- Set runtime path of "/mac_remote/ws/install/mac_messages/lib/libmac_messages__rosidl_generator_py.so" to ""\n'}
+[15.216389] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/msg/Drive.idl\n'}
+[15.216592] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/msg/Drive.msg\n'}
+[15.216846] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/ament_index/resource_index/package_run_dependencies/mac_messages\n'}
+[15.216961] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/ament_index/resource_index/parent_prefix_path/mac_messages\n'}
+[15.217104] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/ament_prefix_path.sh\n'}
+[15.217317] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/ament_prefix_path.dsv\n'}
+[15.217433] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/path.sh\n'}
+[15.217522] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/environment/path.dsv\n'}
+[15.217635] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/local_setup.bash\n'}
+[15.217748] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/local_setup.sh\n'}
+[15.217815] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/local_setup.zsh\n'}
+[15.217885] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/local_setup.dsv\n'}
+[15.217962] (mac_messages) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/mac_messages/share/mac_messages/package.dsv\n'}
+[15.218121] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/ament_index/resource_index/packages/mac_messages\n'}
+[15.218234] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_generator_cExport.cmake\n'}
+[15.218349] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.218483] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.218568] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.218676] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.218760] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.218847] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_cExport.cmake\n'}
+[15.218917] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.219006] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_generator_cppExport.cmake\n'}
+[15.219144] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.219250] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.219361] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.219436] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.219518] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_cppExport.cmake\n'}
+[15.219615] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messages__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.219699] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_generator_pyExport.cmake\n'}
+[15.219818] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/export_mac_messages__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.219913] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/rosidl_cmake-extras.cmake\n'}
+[15.219993] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.220084] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.220162] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.220250] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.220328] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.220390] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.220452] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messagesConfig.cmake\n'}
+[15.220530] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/cmake/mac_messagesConfig-version.cmake\n'}
+[15.220598] (mac_messages) StdoutLine: {'line': b'-- Up-to-date: /mac_remote/ws/install/mac_messages/share/mac_messages/package.xml\n'}
+[15.222564] (mac_messages) CommandEnded: {'returncode': 0}
+[15.231370] (-) TimerEvent: {}
+[15.332064] (-) TimerEvent: {}
+[15.432405] (-) TimerEvent: {}
+[15.532968] (-) TimerEvent: {}
+[15.633624] (-) TimerEvent: {}
+[15.705484] (mac_messages) JobEnded: {'identifier': 'mac_messages', 'rc': 0}
+[15.706364] (manual_control) JobStarted: {'identifier': 'manual_control'}
+[15.734211] (-) TimerEvent: {}
+[15.834497] (-) TimerEvent: {}
+[15.934801] (-) TimerEvent: {}
+[16.035207] (-) TimerEvent: {}
+[16.135453] (-) TimerEvent: {}
+[16.235742] (-) TimerEvent: {}
+[16.336031] (-) TimerEvent: {}
+[16.436433] (-) TimerEvent: {}
+[16.537051] (-) TimerEvent: {}
+[16.637733] (-) TimerEvent: {}
+[16.738341] (-) TimerEvent: {}
+[16.838964] (-) TimerEvent: {}
+[16.939558] (-) TimerEvent: {}
+[17.040198] (-) TimerEvent: {}
+[17.140829] (-) TimerEvent: {}
+[17.241466] (-) TimerEvent: {}
+[17.342104] (-) TimerEvent: {}
+[17.378997] (manual_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/mac_remote/ws/build/manual_control/build'], 'cwd': '/mac_remote/ws/build/manual_control', 'env': {'HOSTNAME': 'dan-Strix-17-GL703GE', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'CYCLONEDDS_URI': '/tmp/cyclonedds.xml', 'OLDPWD': '/mac_remote', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/mac_remote/ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/mac_remote/ws/install/manual_control:/mac_remote/ws/install/mac_messages:/opt/ros/humble', 'PWD': '/mac_remote/ws/build/manual_control', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/build/manual_control:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/mac_remote/ws/install/mac_messages'}, 'shell': False}
+[17.442195] (-) TimerEvent: {}
+[17.542471] (-) TimerEvent: {}
+[17.613296] (manual_control) StdoutLine: {'line': b'running develop\n'}
+[17.642567] (-) TimerEvent: {}
+[17.741818] (manual_control) StdoutLine: {'line': b'Removing /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual-control.egg-link (link to .)\n'}
+[17.742629] (-) TimerEvent: {}
+[17.765178] (manual_control) CommandEnded: {'returncode': 0}
+[17.766265] (manual_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/manual_control', 'build', '--build-base', '/mac_remote/ws/build/manual_control/build', 'install', '--record', '/mac_remote/ws/build/manual_control/install.log', '--single-version-externally-managed'], 'cwd': '/mac_remote/ws/src/manual_control', 'env': {'HOSTNAME': 'dan-Strix-17-GL703GE', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'CYCLONEDDS_URI': '/tmp/cyclonedds.xml', 'OLDPWD': '/mac_remote', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/mac_remote/ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/mac_remote/ws/install/manual_control:/mac_remote/ws/install/mac_messages:/opt/ros/humble', 'PWD': '/mac_remote/ws/build/manual_control', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/build/manual_control:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/mac_remote/ws/install/mac_messages'}, 'shell': False}
+[17.842768] (-) TimerEvent: {}
+[17.943035] (-) TimerEvent: {}
+[17.991745] (manual_control) StdoutLine: {'line': b'running egg_info\n'}
+[17.992227] (manual_control) StdoutLine: {'line': b'writing ../../build/manual_control/manual_control.egg-info/PKG-INFO\n'}
+[18.043140] (-) TimerEvent: {}
+[18.143547] (-) TimerEvent: {}
+[18.244198] (-) TimerEvent: {}
+[18.344796] (-) TimerEvent: {}
+[18.445435] (-) TimerEvent: {}
+[18.454626] (manual_control) StdoutLine: {'line': b'writing dependency_links to ../../build/manual_control/manual_control.egg-info/dependency_links.txt\n'}
+[18.545662] (-) TimerEvent: {}
+[18.646314] (-) TimerEvent: {}
+[18.746980] (-) TimerEvent: {}
+[18.788957] (manual_control) StdoutLine: {'line': b'writing entry points to ../../build/manual_control/manual_control.egg-info/entry_points.txt\n'}
+[18.847200] (-) TimerEvent: {}
+[18.947851] (-) TimerEvent: {}
+[19.048482] (-) TimerEvent: {}
+[19.085155] (manual_control) StdoutLine: {'line': b'writing requirements to ../../build/manual_control/manual_control.egg-info/requires.txt\n'}
+[19.148687] (-) TimerEvent: {}
+[19.249316] (-) TimerEvent: {}
+[19.349954] (-) TimerEvent: {}
+[19.376377] (manual_control) StdoutLine: {'line': b'writing top-level names to ../../build/manual_control/manual_control.egg-info/top_level.txt\n'}
+[19.450173] (-) TimerEvent: {}
+[19.550834] (-) TimerEvent: {}
+[19.651535] (-) TimerEvent: {}
+[19.656173] (manual_control) StdoutLine: {'line': b"reading manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'\n"}
+[19.657038] (manual_control) StdoutLine: {'line': b"writing manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'\n"}
+[19.751735] (-) TimerEvent: {}
+[19.852377] (-) TimerEvent: {}
+[19.925848] (manual_control) StdoutLine: {'line': b'running build\n'}
+[20.203778] (-) TimerEvent: {}
+[20.204355] (manual_control) StdoutLine: {'line': b'running build_py\n'}
+[20.204960] (manual_control) StdoutLine: {'line': b'running install\n'}
+[20.205254] (manual_control) StdoutLine: {'line': b'running install_lib\n'}
+[20.205517] (manual_control) StdoutLine: {'line': b'creating /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control\n'}
+[20.205775] (manual_control) StdoutLine: {'line': b'copying /mac_remote/ws/build/manual_control/build/lib/manual_control/manual_node.py -> /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control\n'}
+[20.206033] (manual_control) StdoutLine: {'line': b'copying /mac_remote/ws/build/manual_control/build/lib/manual_control/__init__.py -> /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control\n'}
+[20.206735] (manual_control) StdoutLine: {'line': b'byte-compiling /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control/manual_node.py to manual_node.cpython-310.pyc\n'}
+[20.208928] (manual_control) StdoutLine: {'line': b'byte-compiling /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control/__init__.py to __init__.cpython-310.pyc\n'}
+[20.209206] (manual_control) StdoutLine: {'line': b'running install_data\n'}
+[20.209846] (manual_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[20.211967] (manual_control) StdoutLine: {'line': b'Copying ../../build/manual_control/manual_control.egg-info to /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control-0.0.0-py3.10.egg-info\n'}
+[20.212983] (manual_control) StdoutLine: {'line': b'running install_scripts\n'}
+[20.232708] (manual_control) StdoutLine: {'line': b'Installing manual_control_node script to /mac_remote/ws/install/manual_control/lib/manual_control\n'}
+[20.303936] (-) TimerEvent: {}
+[20.404346] (-) TimerEvent: {}
+[20.504865] (-) TimerEvent: {}
+[20.605502] (-) TimerEvent: {}
+[20.706202] (-) TimerEvent: {}
+[20.735515] (manual_control) StdoutLine: {'line': b"writing list of installed files to '/mac_remote/ws/build/manual_control/install.log'\n"}
+[20.790613] (manual_control) CommandEnded: {'returncode': 0}
+[20.806251] (-) TimerEvent: {}
+[20.906664] (-) TimerEvent: {}
+[21.007306] (-) TimerEvent: {}
+[21.107988] (-) TimerEvent: {}
+[21.208659] (-) TimerEvent: {}
+[21.309220] (-) TimerEvent: {}
+[21.400494] (manual_control) JobEnded: {'identifier': 'manual_control', 'rc': 0}
+[21.423494] (-) TimerEvent: {}
+[21.423724] (-) EventReactorShutdown: {}

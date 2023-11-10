@@ -1,0 +1,120 @@
+[0.000000] (-) TimerEvent: {}
+[0.000177] (-) JobUnselected: {'identifier': 'mac_messages'}
+[0.000242] (-) JobUnselected: {'identifier': 'manual_control'}
+[0.000279] (macnav_description) JobQueued: {'identifier': 'macnav_description', 'dependencies': OrderedDict()}
+[0.000299] (macnav_description) JobStarted: {'identifier': 'macnav_description'}
+[0.099237] (-) TimerEvent: {}
+[0.178931] (macnav_description) JobProgress: {'identifier': 'macnav_description', 'progress': 'cmake'}
+[0.180169] (macnav_description) Command: {'cmd': ['/usr/bin/cmake', '/mac_remote/ws/src/macnav_description', '-DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/macnav_description'], 'cwd': '/mac_remote/ws/build/macnav_description', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,146,0'), ('HOSTNAME', 'dan-Strix-17-GL703GE'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote'), ('TERM_PROGRAM_VERSION', '3.2a'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'tmux-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mac_remote/ws/install/manual_control:/mac_remote/ws/install/mac_messages:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/mac_remote/ws/build/macnav_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TMUX_PANE', '%2'), ('CMAKE_PREFIX_PATH', '/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[0.218509] (-) TimerEvent: {}
+[0.319203] (-) TimerEvent: {}
+[0.419776] (-) TimerEvent: {}
+[0.521532] (-) TimerEvent: {}
+[0.622322] (-) TimerEvent: {}
+[0.722774] (-) TimerEvent: {}
+[0.823380] (-) TimerEvent: {}
+[0.923972] (-) TimerEvent: {}
+[1.024679] (-) TimerEvent: {}
+[1.125351] (-) TimerEvent: {}
+[1.226140] (-) TimerEvent: {}
+[1.326605] (-) TimerEvent: {}
+[1.427114] (-) TimerEvent: {}
+[1.527854] (-) TimerEvent: {}
+[1.628465] (-) TimerEvent: {}
+[1.728873] (-) TimerEvent: {}
+[1.829580] (-) TimerEvent: {}
+[1.930509] (-) TimerEvent: {}
+[2.031064] (-) TimerEvent: {}
+[2.131751] (-) TimerEvent: {}
+[2.232358] (-) TimerEvent: {}
+[2.332938] (-) TimerEvent: {}
+[2.433546] (-) TimerEvent: {}
+[2.534194] (-) TimerEvent: {}
+[2.634921] (-) TimerEvent: {}
+[2.735337] (-) TimerEvent: {}
+[2.835944] (-) TimerEvent: {}
+[2.936408] (-) TimerEvent: {}
+[3.036968] (-) TimerEvent: {}
+[3.137417] (-) TimerEvent: {}
+[3.238366] (-) TimerEvent: {}
+[3.338979] (-) TimerEvent: {}
+[3.439407] (-) TimerEvent: {}
+[3.540051] (-) TimerEvent: {}
+[3.640719] (-) TimerEvent: {}
+[3.741354] (-) TimerEvent: {}
+[3.841991] (-) TimerEvent: {}
+[3.942601] (-) TimerEvent: {}
+[4.043396] (-) TimerEvent: {}
+[4.144013] (-) TimerEvent: {}
+[4.184461] (macnav_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.244136] (-) TimerEvent: {}
+[4.344713] (-) TimerEvent: {}
+[4.445298] (-) TimerEvent: {}
+[4.545727] (-) TimerEvent: {}
+[4.646378] (-) TimerEvent: {}
+[4.747061] (-) TimerEvent: {}
+[4.794691] (macnav_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.847172] (-) TimerEvent: {}
+[4.869298] (macnav_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.947383] (-) TimerEvent: {}
+[5.048154] (-) TimerEvent: {}
+[5.148811] (-) TimerEvent: {}
+[5.153395] (macnav_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.164727] (macnav_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.165328] (macnav_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.174673] (macnav_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.185050] (macnav_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.248943] (-) TimerEvent: {}
+[5.306780] (macnav_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.314345] (macnav_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.314577] (macnav_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.314983] (macnav_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.347563] (macnav_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.349134] (-) TimerEvent: {}
+[5.451088] (-) TimerEvent: {}
+[5.551553] (-) TimerEvent: {}
+[5.632468] (macnav_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[5.651670] (-) TimerEvent: {}
+[5.751901] (-) TimerEvent: {}
+[5.852218] (-) TimerEvent: {}
+[5.952477] (-) TimerEvent: {}
+[5.972551] (macnav_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.975526] (macnav_description) StdoutLine: {'line': b'-- Generating done\n'}
+[5.976358] (macnav_description) StdoutLine: {'line': b'-- Build files have been written to: /mac_remote/ws/build/macnav_description\n'}
+[5.981428] (macnav_description) CommandEnded: {'returncode': 0}
+[5.981882] (macnav_description) JobProgress: {'identifier': 'macnav_description', 'progress': 'build'}
+[5.983062] (macnav_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mac_remote/ws/build/macnav_description', '--', '-j12', '-l12'], 'cwd': '/mac_remote/ws/build/macnav_description', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,146,0'), ('HOSTNAME', 'dan-Strix-17-GL703GE'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote'), ('TERM_PROGRAM_VERSION', '3.2a'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'tmux-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mac_remote/ws/install/manual_control:/mac_remote/ws/install/mac_messages:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/mac_remote/ws/build/macnav_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TMUX_PANE', '%2'), ('CMAKE_PREFIX_PATH', '/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[6.033143] (macnav_description) CommandEnded: {'returncode': 0}
+[6.052585] (-) TimerEvent: {}
+[6.064686] (macnav_description) JobProgress: {'identifier': 'macnav_description', 'progress': 'install'}
+[6.077805] (macnav_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mac_remote/ws/build/macnav_description'], 'cwd': '/mac_remote/ws/build/macnav_description', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,146,0'), ('HOSTNAME', 'dan-Strix-17-GL703GE'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote'), ('TERM_PROGRAM_VERSION', '3.2a'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'tmux-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mac_remote/ws/install/manual_control:/mac_remote/ws/install/mac_messages:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/mac_remote/ws/build/macnav_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TMUX_PANE', '%2'), ('CMAKE_PREFIX_PATH', '/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[6.089692] (macnav_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.089990] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf\n'}
+[6.090201] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/macnav.urdf.xacro\n'}
+[6.090407] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/macnav_lidar.xacro\n'}
+[6.090594] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/common_properties.xacro\n'}
+[6.090806] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/macnav_base.xacro\n'}
+[6.091035] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//launch\n'}
+[6.091136] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//launch/display.launch.xml\n'}
+[6.091262] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//rviz\n'}
+[6.091380] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description//rviz/macnav_config.rviz\n'}
+[6.091592] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/ament_index/resource_index/package_run_dependencies/macnav_description\n'}
+[6.091913] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/ament_index/resource_index/parent_prefix_path/macnav_description\n'}
+[6.092206] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/ament_prefix_path.sh\n'}
+[6.092492] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/ament_prefix_path.dsv\n'}
+[6.092703] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/path.sh\n'}
+[6.092927] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/path.dsv\n'}
+[6.093142] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.bash\n'}
+[6.093365] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.sh\n'}
+[6.093593] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.zsh\n'}
+[6.093784] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.dsv\n'}
+[6.094016] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/package.dsv\n'}
+[6.094315] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/ament_index/resource_index/packages/macnav_description\n'}
+[6.094578] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/cmake/macnav_descriptionConfig.cmake\n'}
+[6.094767] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/cmake/macnav_descriptionConfig-version.cmake\n'}
+[6.095017] (macnav_description) StdoutLine: {'line': b'-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/package.xml\n'}
+[6.097541] (macnav_description) CommandEnded: {'returncode': 0}
+[6.152708] (-) TimerEvent: {}
+[6.253434] (-) TimerEvent: {}
+[6.266007] (macnav_description) JobEnded: {'identifier': 'macnav_description', 'rc': 0}
+[6.267054] (-) EventReactorShutdown: {}
