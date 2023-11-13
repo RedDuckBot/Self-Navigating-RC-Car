@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
         "manual_control_node = manual_control.manual_node:main",
         "odom_to_tf_node = manual_control.odom_to_tf_node:main",
-        "odom_test_node = manual_control.odom_test_node:main"
+        "odom_test_node = manual_control.odom_test_node:main",
+        "keyboard_control_node = manual_control.manual_keyboard_node:main",
         ],
     },
 )

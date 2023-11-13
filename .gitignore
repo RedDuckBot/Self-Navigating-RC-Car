@@ -8,4 +8,6 @@ remote_setup/ws/install/
 *.pyc
 remote_setup/cyclonedds.xml
 remote_setup/Scripts/
+ws/src/camera/openCV_client.py
+remote_setup/src/camera/openCV_server.py
 Scripts/
