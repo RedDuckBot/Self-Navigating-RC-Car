@@ -3,7 +3,7 @@ import rclpy, serial
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 
-from geometry_msgs import Twist
+from geometry_msgs.msg import Twist
 import math
 
 sensor_arduino = serial.Serial(port="/dev/ttyUSB0",baudrate=115200)
@@ -11,26 +11,27 @@ sensor_arduino = serial.Serial(port="/dev/ttyUSB0",baudrate=115200)
 
 class Odom_node(Node):
 
-    _TIMER_INTERVAL = 0.1
-    _WHEEL_BASE = 0.265
-    _WHEEL_RADIUS = 0.0402
-    _R = 0.0042457542
-    _STEER_RATIO = 0.005
+    TIMER_INTERVAL = 0.1
+    WHEEL_BASE = 0.265
+    WHEEL_RADIUS = 0.0402
+    R = 0.0042457542
+    STEER_RATIO = 0.005
 
 
-    _steer = 0
-    _x = 0
-    _y = 0
-    _heading = 0
+    steer = 0
+    forwards = True
+    x = 0
+    y = 0
+    heading = 0 #corresponds to yaw
 
     
 
 
     def __init__(self):
         super().__init__('odom_publisher')
-        self.publisher_ = self.create_publisher(Odometry, 'odom', 10)
-        self.tmr = self.create_timer(self._TIMER_INTERVAL, self.publish)
-        self.dirve_sub = self.create_subscription(twist,"/cmd_vel",
+        self.publisher = self.create_publisher(Odometry, 'odom', 10)
+        self.tmr = self.create_timer(self.TIMER_INTERVAL, self.publish)
+        self.dirve_sub = self.create_subscription(Twist,"/cmd_vel",
             self.update_steer,10)
 
 
@@ -47,55 +48,47 @@ class Odom_node(Node):
         if sensor_arduino.is_open:
             try:
                 counts = sensor_arduino.readline().decode().strip()
-                print(counts, self._steer)
             except:
-                print("Failed to get msg")
                 counts = 0
 
+            if self.forwards:
+                lin = float(counts) * self.R * 2.0 * math.pi * self.WHEEL_RADIUS
+                ang = math.tan(self.steer * self.STEER_RATIO) * lin / self.WHEEL_BASE
+            else:
+                lin = -float(counts) * self.R * 2.0 * math.pi * self.WHEEL_RADIUS
+                ang = math.tan(self.steer * self.STEER_RATIO) * lin / self.WHEEL_BASE
 
-            lin = float(counts) * self._R * 2.0 * math.pi * self._WHEEL_RADIUS
-            ang = math.tan(self._steer * self._STEER_RATIO) * lin / self._WHEEL_BASE
+            dir = self.heading - ang/2
+            self.x += lin * math.cos(dir)
+            self.y += lin * math.sin(dir)
+            self.heading -= ang
 
-
-            dir = self._heading - ang/2
-            self._x += lin * math.cos(dir)
-            self._y += lin * math.sin(dir)
-            self._heading -= ang
-
-
-            print("x =", self._x, 
-                  "\ny =", self._y, 
-                  "\nlin =", lin,
-                  "\nang =", ang,
-                  "\nh =", self._heading
-                  )
-
-
-            print("-----")
             self.publish_odom()
-
-
-
-        
 
     def publish_odom(self):
         msg = Odometry()
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.header.frame_id = "odom"
-        msg.pose.pose.position.x = self._x
-        msg.pose.pose.position.y = self._y
+        msg.pose.pose.position.x = self.x
+        msg.pose.pose.position.y = self.y
         msg.pose.pose.position.z = 0.0
-        r = self.euler_to_quaternion([self._heading, 0.0, 0.0])
+        r = self.euler_to_quaternion([self.heading, 0.0, 0.0])
         msg.pose.pose.orientation.x = r[0]
         msg.pose.pose.orientation.y = r[1]
         msg.pose.pose.orientation.z = r[2]
         msg.pose.pose.orientation.w = r[3]
         msg.child_frame_id = "base_link"
  
-        self.publisher_.publish(msg)
+        self.publisher.publish(msg)
 
     def update_steer(self, msg):
-        self._steer = msg.angular.z
+        self.steer = msg.angular.z
+        
+        if msg.linear.x > 0:
+            self.forwards = True
+        elif msg.linear.x < 0: 
+            self.forwards = False
+
 
 
 def main(args=None):
