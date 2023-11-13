@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy, serial
 from rclpy.node import Node 
-from geometry_msgs import Twist
+from geometry_msgs.msg import Twist
 
 #Node passes xbox input to topic /arduino_channel
 arduino = serial.Serial(port="/dev/ttyACM0",baudrate=115200)
@@ -15,10 +15,15 @@ class Arduino_node(Node):
         self.get_logger().info("Arduino manual node initialized")
 
     def send_drive_msg(self,msg):
-        arduino.write(msg.angular.z)
-        arduino.flush()
-        arduino.write(msg.linear.x)
-        arduino.flush()
+        input("wait")
+        #print(str(int(msg.angular.z)).encode(), "<- encodes")
+
+        print("wrote: ", "10".encode(),  arduino.write("10".encode()))
+
+        print("reading")
+        line = arduino.readline()
+        print(line)
+        print(line.decode())
 
 def main(args=None):
     rclpy.init(args=args)

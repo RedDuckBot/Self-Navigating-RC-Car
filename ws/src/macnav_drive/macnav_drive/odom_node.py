@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
 import rclpy, serial
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
-from mac_messages.msg import Drive
+
 from geometry_msgs import Twist
 import math
 
