@@ -1,5 +1,8 @@
 import serial, signal, threading
 
+"""Program can be used to test accuracy of sensors by comparing printed data
+   coming from sesnor arduino
+"""
 sensor_arduino = serial.Serial(port="/dev/ttyUSB0",baudrate=115200,timeout=5)
 
 is_done = False
@@ -12,17 +15,16 @@ def handler(num, frame):
     lock.release()
 
 def main():
-    global total_distance
-    signal.signal(signal.SIGINT,handler)
+    signal.signal(signal.SIGINT,handler) #When done test press ctrl + c
     is_reading = True
     while is_reading:
-        dist = float(sensor_arduino.readline().decode().strip())
+        data = float(sensor_arduino.readline().decode().strip())
         lock.acquire()
         if is_done == True:
             is_reading = False
         lock.release()
-        print("%.10f" % dist)
-    print(f"total distance: {dist}")
+        print("%.10f" % data)
+    #print(f"total distance: {dist}")
     sensor_arduino.close()
 
 if __name__ == "__main__":

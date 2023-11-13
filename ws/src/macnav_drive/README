@@ -1,0 +1,17 @@
+Drive package for macnav
+
+drive.launch.xml
+    manual_control -> arduino_node
+    manual_control -> odom_node
+    rplidar_ros -> rplidar_a1_launch.py
+    launches all nodes needed for slam.
+    ensure drive arduino is on /dev/ttyAMC0
+    ensure sensor arduino is on /dev/ttyUSB0
+    ensure lidar is on /dev/ttyUSB1
+    
+
+drive_node.py
+    listens to /cmd_vel for Twist msgs and sends them to the drive arduino
+
+odom_node.py    
+    publishes Odom msgs on /odom 
