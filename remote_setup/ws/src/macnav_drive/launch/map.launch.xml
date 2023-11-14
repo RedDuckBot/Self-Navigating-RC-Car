@@ -13,8 +13,6 @@
         <node pkg="manual_control" exec="odom_to_tf_node"/>
 
 
-        <node pkg="rviz2" exec="rviz2" output="screen"/>
-
-
+    <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)"/>
 
 </launch>

@@ -7,7 +7,7 @@
     <General>
       <Interfaces>
         <!-- WARNING: set this to the IP address that you can be reached at by your peers -->
-        <NetworkInterface address="10.60.114.39"/> 
+        <NetworkInterface address="10.60.69.102"/> 
       </Interfaces>
       <AllowMulticast>false</AllowMulticast>
       <MulticastRecvNetworkInterfaceAddresses>all</MulticastRecvNetworkInterfaceAddresses>
