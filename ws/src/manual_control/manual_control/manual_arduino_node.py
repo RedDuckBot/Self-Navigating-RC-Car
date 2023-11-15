@@ -4,15 +4,18 @@ from rclpy.node import Node
 from mac_messages.msg import Drive 
 
 #Node passes xbox input to topic /arduino_channel
+
 arduino = serial.Serial(port="/dev/ttyACM0",baudrate=115200)
 
 class Arduino_node(Node):
     def __init__(self):
+        input("waiting1...")
         super().__init__("manual_node")
+        input("waiting2...")
         #create arduino subscribing node
         self.arduino_sub = self.create_subscription(Drive,"/arduino_channel",
             self.send_drive_msg,10)
-        self.get_logger().info("Arduino manual node initialized")
+        self.get_logger().info("Arduino node initialized")
 
     def send_drive_msg(self,msg):
         command = msg.command
