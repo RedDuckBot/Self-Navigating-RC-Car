@@ -1,5 +1,0 @@
-  File "/mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control/controller_node.py", line 30
-    if msg.buttons[0] and !self.has_enabled_drive:
-                          ^
-SyntaxError: invalid syntax
-

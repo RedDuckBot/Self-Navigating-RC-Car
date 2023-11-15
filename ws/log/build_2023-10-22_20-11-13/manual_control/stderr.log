@@ -1,5 +1,0 @@
-  File "/mac_everything/ws/install/manual_control/lib/python3.8/site-packages/manual_control/controller_node.py", line 1
-    import json, serial, rclpy,
-                               ^
-SyntaxError: invalid syntax
-
