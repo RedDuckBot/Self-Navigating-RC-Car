@@ -1,0 +1,4 @@
+source;share/macnav_drive/local_setup.bash
+source;share/macnav_drive/local_setup.dsv
+source;share/macnav_drive/local_setup.sh
+source;share/macnav_drive/local_setup.zsh

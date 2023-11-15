@@ -1,0 +1,2 @@
+Invoking command in '/mac_remote/ws/build/joint_state_publisher': /usr/bin/cmake /mac_remote/ws/src/joint_state_publisher/joint_state_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/joint_state_publisher
+Invoked command in '/mac_remote/ws/build/joint_state_publisher' returned '1': /usr/bin/cmake /mac_remote/ws/src/joint_state_publisher/joint_state_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/joint_state_publisher

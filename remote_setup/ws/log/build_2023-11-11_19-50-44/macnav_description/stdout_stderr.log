@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/macnav.urdf.xacro
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/macnav_lidar.xacro
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/common_properties.xacro
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//urdf/macnav_base.xacro
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//launch
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//launch/display.launch.xml
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//rviz
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description//rviz/macnav_config.rviz
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/ament_index/resource_index/package_run_dependencies/macnav_description
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/ament_index/resource_index/parent_prefix_path/macnav_description
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/ament_prefix_path.sh
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/path.sh
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/environment/path.dsv
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.bash
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.sh
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.zsh
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/local_setup.dsv
+-- Installing: /mac_remote/ws/install/macnav_description/share/macnav_description/package.dsv
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/ament_index/resource_index/packages/macnav_description
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/cmake/macnav_descriptionConfig.cmake
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/cmake/macnav_descriptionConfig-version.cmake
+-- Up-to-date: /mac_remote/ws/install/macnav_description/share/macnav_description/package.xml

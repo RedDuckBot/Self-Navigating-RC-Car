@@ -1,0 +1,28 @@
+running develop
+Removing /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual-control.egg-link (link to .)
+running egg_info
+writing ../../build/manual_control/manual_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/manual_control/manual_control.egg-info/dependency_links.txt
+writing entry points to ../../build/manual_control/manual_control.egg-info/entry_points.txt
+writing requirements to ../../build/manual_control/manual_control.egg-info/requires.txt
+writing top-level names to ../../build/manual_control/manual_control.egg-info/top_level.txt
+reading manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/manual_control/manual_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying manual_control/odom_to_tf_node.py -> /mac_remote/ws/build/manual_control/build/lib/manual_control
+running install
+running install_lib
+creating /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control
+copying /mac_remote/ws/build/manual_control/build/lib/manual_control/manual_node.py -> /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control
+copying /mac_remote/ws/build/manual_control/build/lib/manual_control/odom_to_tf_node.py -> /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control
+copying /mac_remote/ws/build/manual_control/build/lib/manual_control/__init__.py -> /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control
+byte-compiling /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control/manual_node.py to manual_node.cpython-310.pyc
+byte-compiling /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control/odom_to_tf_node.py to odom_to_tf_node.cpython-310.pyc
+byte-compiling /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control/__init__.py to __init__.cpython-310.pyc
+running install_data
+running install_egg_info
+Copying ../../build/manual_control/manual_control.egg-info to /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing manual_control_node = manual_control.manual_node:mainodom_to_tf_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+writing list of installed files to '/mac_remote/ws/build/manual_control/install.log'

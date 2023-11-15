@@ -1,0 +1,19 @@
+[0.738s] Invoking command in '/mac_remote/ws/build/manual_control': CMAKE_PREFIX_PATH=/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/macnav_description PYTHONPATH=/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /mac_remote/ws/build/manual_control/build --no-deps install_data
+[0.977s] running develop
+[1.106s] running egg_info
+[1.107s] writing manual_control.egg-info/PKG-INFO
+[1.107s] writing dependency_links to manual_control.egg-info/dependency_links.txt
+[1.107s] writing entry points to manual_control.egg-info/entry_points.txt
+[1.107s] writing requirements to manual_control.egg-info/requires.txt
+[1.107s] writing top-level names to manual_control.egg-info/top_level.txt
+[1.109s] reading manifest file 'manual_control.egg-info/SOURCES.txt'
+[1.110s] writing manifest file 'manual_control.egg-info/SOURCES.txt'
+[1.111s] running build_ext
+[1.112s] Creating /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual-control.egg-link (link to .)
+[1.113s] Installing manual_control_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+[1.113s] Installing odom_test_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+[1.113s] Installing odom_to_tf_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+[1.113s] 
+[1.113s] Installed /mac_remote/ws/build/manual_control
+[1.113s] running install_data
+[1.140s] Invoked command in '/mac_remote/ws/build/manual_control' returned '0': CMAKE_PREFIX_PATH=/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/macnav_description PYTHONPATH=/mac_remote/ws/build/manual_control/prefix_override:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /mac_remote/ws/build/manual_control/build --no-deps install_data

@@ -7,7 +7,7 @@ from mac_messages.msg import Drive as D_MSG
 #Node passes xbox input to topic /arduino_channel
 
 class Xbox360_contr_node(Node):
-    SPEEDS = [0,120,190,255]
+    SPEEDS = [0, 160, 200, 225, 255]
 
     def __init__(self):
         super().__init__("xbox_controller")
@@ -67,7 +67,7 @@ class Xbox360_contr_node(Node):
                 #Move backward
                 msg.command = "B"
             msg.control_input = self.SPEEDS[self.speedIndex]
-            self.speedIndex = (1 + self.speedIndex) % 4
+            self.speedIndex = (1 + self.speedIndex) % len(self.SPEEDS)
             self.get_logger().info(f"Speed shifted {self.SPEEDS[self.speedIndex - 1]} {(msg.command)}")
 
             self.xbox_pub.publish(msg)

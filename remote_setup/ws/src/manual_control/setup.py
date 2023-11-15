@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        "manual_control_node = manual_control.manual_node:main"
+        "manual_control_node = manual_control.manual_node:main",
+        "odom_to_tf_node = manual_control.odom_to_tf_node:main",
+        "odom_test_node = manual_control.odom_test_node:main"
         ],
     },
 )

@@ -1,2 +1,1 @@
-source;share/macnav_description/environment/ament_prefix_path.sh
-source;share/macnav_description/environment/path.sh
+/mac_remote/ws/build/macnav_description/ament_cmake_environment_hooks/local_setup.dsv

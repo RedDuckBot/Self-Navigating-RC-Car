@@ -1,0 +1,218 @@
+[1.111s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'macnav_drive']
+[1.111s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['macnav_drive'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fa98e6efb20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa98e718730>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa98e718730>>, mixin_verb=('build',))
+[1.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.154s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[1.154s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.155s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mac_remote/ws'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extensions ['ignore', 'ignore_ament_install']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'ignore'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'ignore_ament_install'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extensions ['colcon_pkg']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'colcon_pkg'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extensions ['colcon_meta']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'colcon_meta'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extensions ['ros']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'ros'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extensions ['cmake', 'python']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'cmake'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'python'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extensions ['python_setup_py']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher) by extension 'python_setup_py'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extensions ['ignore', 'ignore_ament_install']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extension 'ignore'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extension 'ignore_ament_install'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extensions ['colcon_pkg']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extension 'colcon_pkg'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extensions ['colcon_meta']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extension 'colcon_meta'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extensions ['ros']
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher) by extension 'ros'
+[1.171s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joint_state_publisher/joint_state_publisher' with type 'ros.ament_python' and name 'joint_state_publisher'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extensions ['ignore', 'ignore_ament_install']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extension 'ignore'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extension 'ignore_ament_install'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extensions ['colcon_pkg']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extension 'colcon_pkg'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extensions ['colcon_meta']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extension 'colcon_meta'
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extensions ['ros']
+[1.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_state_publisher/joint_state_publisher_gui) by extension 'ros'
+[1.172s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joint_state_publisher/joint_state_publisher_gui' with type 'ros.ament_python' and name 'joint_state_publisher_gui'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extensions ['ignore', 'ignore_ament_install']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extension 'ignore'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extension 'ignore_ament_install'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extensions ['colcon_pkg']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extension 'colcon_pkg'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extensions ['colcon_meta']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extension 'colcon_meta'
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extensions ['ros']
+[1.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/mac_messages) by extension 'ros'
+[1.173s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mac_messages' with type 'ros.ament_cmake' and name 'mac_messages'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extensions ['ignore', 'ignore_ament_install']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extension 'ignore'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extension 'ignore_ament_install'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extensions ['colcon_pkg']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extension 'colcon_pkg'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extensions ['colcon_meta']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extension 'colcon_meta'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extensions ['ros']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_description) by extension 'ros'
+[1.174s] DEBUG:colcon.colcon_core.package_identification:Package 'src/macnav_description' with type 'ros.ament_cmake' and name 'macnav_description'
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extensions ['ignore', 'ignore_ament_install']
+[1.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extension 'ignore'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extension 'ignore_ament_install'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extensions ['colcon_pkg']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extension 'colcon_pkg'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extensions ['colcon_meta']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extension 'colcon_meta'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extensions ['ros']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/macnav_drive) by extension 'ros'
+[1.175s] DEBUG:colcon.colcon_core.package_identification:Package 'src/macnav_drive' with type 'ros.ament_cmake' and name 'macnav_drive'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extensions ['ignore', 'ignore_ament_install']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extension 'ignore'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extension 'ignore_ament_install'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extensions ['colcon_pkg']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extension 'colcon_pkg'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extensions ['colcon_meta']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extension 'colcon_meta'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extensions ['ros']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/manual_control) by extension 'ros'
+[1.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manual_control' with type 'ros.ament_python' and name 'manual_control'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore_ament_install'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_pkg']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_pkg'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_meta']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_meta'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ros']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ros'
+[1.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_toolbox' with type 'ros.ament_cmake' and name 'slam_toolbox'
+[1.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.236s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'joint_state_publisher' in 'src/joint_state_publisher/joint_state_publisher'
+[1.236s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mac_messages' in 'src/mac_messages'
+[1.236s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'macnav_description' in 'src/macnav_description'
+[1.236s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'slam_toolbox' in 'src/slam_toolbox'
+[1.236s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'joint_state_publisher_gui' in 'src/joint_state_publisher/joint_state_publisher_gui'
+[1.236s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'manual_control' in 'src/manual_control'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'cmake_target' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'cmake_clean_cache' from command line to 'False'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'cmake_clean_first' from command line to 'False'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'cmake_force_configure' from command line to 'False'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'ament_cmake_args' from command line to 'None'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'catkin_cmake_args' from command line to 'None'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'macnav_drive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.249s] DEBUG:colcon.colcon_core.verb:Building package 'macnav_drive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mac_remote/ws/build/macnav_drive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mac_remote/ws/install/macnav_drive', 'merge_install': False, 'path': '/mac_remote/ws/src/macnav_drive', 'symlink_install': False, 'test_result_base': None}
+[1.262s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.275s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mac_remote/ws/src/macnav_drive' with build type 'ament_cmake'
+[1.275s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mac_remote/ws/src/macnav_drive'
+[1.292s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.292s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.292s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mac_remote/ws/build/macnav_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mac_remote/ws/install/joint_state_publisher:/mac_remote/ws/install/manual_control:/opt/ros/humble /usr/bin/cmake --build /mac_remote/ws/build/macnav_drive -- -j12 -l12
+[1.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mac_remote/ws/build/macnav_drive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mac_remote/ws/install/joint_state_publisher:/mac_remote/ws/install/manual_control:/opt/ros/humble /usr/bin/cmake --build /mac_remote/ws/build/macnav_drive -- -j12 -l12
+[1.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mac_remote/ws/build/macnav_drive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mac_remote/ws/install/joint_state_publisher:/mac_remote/ws/install/manual_control:/opt/ros/humble /usr/bin/cmake --install /mac_remote/ws/build/macnav_drive
+[1.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(macnav_drive)
+[1.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mac_remote/ws/build/macnav_drive' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/mac_remote/ws/install/joint_state_publisher:/mac_remote/ws/install/manual_control:/opt/ros/humble /usr/bin/cmake --install /mac_remote/ws/build/macnav_drive
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive' for CMake module files
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive' for CMake config files
+[1.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('macnav_drive', 'cmake_prefix_path')
+[1.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/mac_remote/ws/install/macnav_drive/share/macnav_drive/hook/cmake_prefix_path.ps1'
+[1.731s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mac_remote/ws/install/macnav_drive/share/macnav_drive/hook/cmake_prefix_path.dsv'
+[1.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/mac_remote/ws/install/macnav_drive/share/macnav_drive/hook/cmake_prefix_path.sh'
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/bin'
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/lib/pkgconfig/macnav_drive.pc'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/lib/python3.10/site-packages'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/bin'
+[1.749s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.ps1'
+[1.750s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.dsv'
+[1.750s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.sh'
+[1.751s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.bash'
+[1.752s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.zsh'
+[1.753s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mac_remote/ws/install/macnav_drive/share/colcon-core/packages/macnav_drive)
+[1.789s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(macnav_drive)
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive' for CMake module files
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive' for CMake config files
+[1.803s] Level 1:colcon.colcon_core.shell:create_environment_hook('macnav_drive', 'cmake_prefix_path')
+[1.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/mac_remote/ws/install/macnav_drive/share/macnav_drive/hook/cmake_prefix_path.ps1'
+[1.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mac_remote/ws/install/macnav_drive/share/macnav_drive/hook/cmake_prefix_path.dsv'
+[1.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/mac_remote/ws/install/macnav_drive/share/macnav_drive/hook/cmake_prefix_path.sh'
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/bin'
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/lib/pkgconfig/macnav_drive.pc'
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/lib/python3.10/site-packages'
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/mac_remote/ws/install/macnav_drive/bin'
+[1.831s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.ps1'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.dsv'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.sh'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.bash'
+[1.833s] INFO:colcon.colcon_core.shell:Creating package script '/mac_remote/ws/install/macnav_drive/share/macnav_drive/package.zsh'
+[1.833s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mac_remote/ws/install/macnav_drive/share/colcon-core/packages/macnav_drive)
+[1.834s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.834s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.834s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.834s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.854s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.857s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[1.858s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.875s] INFO:colcon.colcon_core.shell:Creating prefix script '/mac_remote/ws/install/local_setup.ps1'
+[1.876s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mac_remote/ws/install/_local_setup_util_ps1.py'
+[1.877s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mac_remote/ws/install/setup.ps1'
+[1.890s] INFO:colcon.colcon_core.shell:Creating prefix script '/mac_remote/ws/install/local_setup.sh'
+[1.891s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mac_remote/ws/install/_local_setup_util_sh.py'
+[1.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mac_remote/ws/install/setup.sh'
+[1.907s] INFO:colcon.colcon_core.shell:Creating prefix script '/mac_remote/ws/install/local_setup.bash'
+[1.907s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mac_remote/ws/install/setup.bash'
+[1.922s] INFO:colcon.colcon_core.shell:Creating prefix script '/mac_remote/ws/install/local_setup.zsh'
+[1.922s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mac_remote/ws/install/setup.zsh'

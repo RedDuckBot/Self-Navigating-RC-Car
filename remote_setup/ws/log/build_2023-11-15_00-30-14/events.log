@@ -1,0 +1,240 @@
+[0.000000] (-) TimerEvent: {}
+[0.000192] (-) JobUnselected: {'identifier': 'joint_state_publisher'}
+[0.000318] (-) JobUnselected: {'identifier': 'joint_state_publisher_gui'}
+[0.000594] (-) JobUnselected: {'identifier': 'mac_messages'}
+[0.000675] (-) JobUnselected: {'identifier': 'macnav_description'}
+[0.000764] (-) JobUnselected: {'identifier': 'macnav_drive'}
+[0.000833] (-) JobUnselected: {'identifier': 'manual_control'}
+[0.000881] (slam_toolbox) JobQueued: {'identifier': 'slam_toolbox', 'dependencies': OrderedDict()}
+[0.000945] (slam_toolbox) JobStarted: {'identifier': 'slam_toolbox'}
+[0.087832] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'cmake'}
+[0.088139] (slam_toolbox) Command: {'cmd': ['/usr/bin/cmake', '/mac_remote/ws/src/slam_toolbox', '-DCMAKE_INSTALL_PREFIX=/mac_remote/ws/install/slam_toolbox'], 'cwd': '/mac_remote/ws/build/slam_toolbox', 'env': OrderedDict([('TMUX', '/tmp/tmux-0/default,926,0'), ('HOSTNAME', 'dan-Strix-17-GL703GE'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/mac_remote/ws/install/mac_messages/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/tmp/cyclonedds.xml'), ('OLDPWD', '/mac_remote/ws/src'), ('TERM_PROGRAM_VERSION', '3.2a'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/mac_remote/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'tmux-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/mac_remote/ws/install/joint_state_publisher:/mac_remote/ws/install/macnav_drive:/mac_remote/ws/install/manual_control:/mac_remote/ws/install/macnav_description:/mac_remote/ws/install/mac_messages:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/mac_remote/ws/build/slam_toolbox'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages:/mac_remote/ws/build/manual_control:/mac_remote/ws/install/manual_control/lib/python3.10/site-packages:/mac_remote/ws/install/mac_messages/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('TMUX_PANE', '%2'), ('CMAKE_PREFIX_PATH', '/mac_remote/ws/install/macnav_drive:/mac_remote/ws/install/macnav_description:/mac_remote/ws/install/mac_messages:/mac_remote/ws/install/joint_state_publisher:/mac_remote/ws/install/manual_control:/opt/ros/humble')]), 'shell': False}
+[0.099311] (-) TimerEvent: {}
+[0.166220] (slam_toolbox) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199576] (-) TimerEvent: {}
+[0.255460] (slam_toolbox) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.263820] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299680] (-) TimerEvent: {}
+[0.377633] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.385436] (slam_toolbox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.385820] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.386240] (slam_toolbox) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.390473] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399845] (-) TimerEvent: {}
+[0.500300] (-) TimerEvent: {}
+[0.518297] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.534591] (slam_toolbox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.534990] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.535576] (slam_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.540984] (slam_toolbox) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600389] (-) TimerEvent: {}
+[0.700700] (-) TimerEvent: {}
+[0.801027] (-) TimerEvent: {}
+[0.805775] (slam_toolbox) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.901148] (-) TimerEvent: {}
+[0.997503] (slam_toolbox) StdoutLine: {'line': b'-- Found message_filters: 4.3.3 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[1.001399] (-) TimerEvent: {}
+[1.102330] (-) TimerEvent: {}
+[1.203292] (-) TimerEvent: {}
+[1.276366] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.296332] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.303406] (-) TimerEvent: {}
+[1.324253] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.363678] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.403661] (-) TimerEvent: {}
+[1.405867] (slam_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.503747] (-) TimerEvent: {}
+[1.598365] (slam_toolbox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.603570] (slam_toolbox) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.603805] (-) TimerEvent: {}
+[1.707096] (-) TimerEvent: {}
+[1.752583] (slam_toolbox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.807205] (-) TimerEvent: {}
+[1.822322] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.907405] (-) TimerEvent: {}
+[2.008361] (-) TimerEvent: {}
+[2.110777] (-) TimerEvent: {}
+[2.169742] (slam_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.170027] (slam_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.210852] (-) TimerEvent: {}
+[2.379025] (-) TimerEvent: {}
+[2.479683] (-) TimerEvent: {}
+[2.482496] (slam_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.484599] (slam_toolbox) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.579758] (-) TimerEvent: {}
+[2.680219] (-) TimerEvent: {}
+[2.780940] (-) TimerEvent: {}
+[2.881701] (-) TimerEvent: {}
+[2.982066] (-) TimerEvent: {}
+[3.082660] (-) TimerEvent: {}
+[3.183245] (-) TimerEvent: {}
+[3.285653] (-) TimerEvent: {}
+[3.386176] (-) TimerEvent: {}
+[3.486720] (-) TimerEvent: {}
+[3.587465] (-) TimerEvent: {}
+[3.688277] (-) TimerEvent: {}
+[3.789667] (-) TimerEvent: {}
+[3.890333] (-) TimerEvent: {}
+[3.991334] (-) TimerEvent: {}
+[4.092095] (-) TimerEvent: {}
+[4.193055] (-) TimerEvent: {}
+[4.294218] (-) TimerEvent: {}
+[4.394796] (-) TimerEvent: {}
+[4.495340] (-) TimerEvent: {}
+[4.595747] (-) TimerEvent: {}
+[4.624970] (slam_toolbox) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[4.695896] (-) TimerEvent: {}
+[4.796853] (-) TimerEvent: {}
+[4.897406] (-) TimerEvent: {}
+[4.997718] (-) TimerEvent: {}
+[5.098347] (-) TimerEvent: {}
+[5.199056] (-) TimerEvent: {}
+[5.301996] (-) TimerEvent: {}
+[5.350304] (slam_toolbox) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.402076] (-) TimerEvent: {}
+[5.502409] (-) TimerEvent: {}
+[5.510972] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)\n'}
+[5.602610] (-) TimerEvent: {}
+[5.646229] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[5.702777] (-) TimerEvent: {}
+[5.803219] (-) TimerEvent: {}
+[5.903939] (-) TimerEvent: {}
+[6.004762] (-) TimerEvent: {}
+[6.105432] (-) TimerEvent: {}
+[6.205843] (-) TimerEvent: {}
+[6.307550] (-) TimerEvent: {}
+[6.408513] (-) TimerEvent: {}
+[6.509449] (-) TimerEvent: {}
+[6.609981] (-) TimerEvent: {}
+[6.712519] (-) TimerEvent: {}
+[6.812866] (-) TimerEvent: {}
+[6.913210] (-) TimerEvent: {}
+[7.013599] (-) TimerEvent: {}
+[7.113910] (-) TimerEvent: {}
+[7.214190] (-) TimerEvent: {}
+[7.314553] (-) TimerEvent: {}
+[7.330229] (slam_toolbox) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[7.414716] (-) TimerEvent: {}
+[7.515090] (-) TimerEvent: {}
+[7.521024] (slam_toolbox) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[7.562096] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.4 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[7.615292] (-) TimerEvent: {}
+[7.716040] (-) TimerEvent: {}
+[7.812717] (slam_toolbox) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[7.816238] (-) TimerEvent: {}
+[7.820412] (slam_toolbox) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[7.821082] (slam_toolbox) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[7.916332] (-) TimerEvent: {}
+[7.920660] (slam_toolbox) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.25.4 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)\n'}
+[7.999004] (slam_toolbox) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[8.016796] (-) TimerEvent: {}
+[8.119401] (-) TimerEvent: {}
+[8.220192] (-) TimerEvent: {}
+[8.259053] (slam_toolbox) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[8.320325] (-) TimerEvent: {}
+[8.347828] (slam_toolbox) StdoutLine: {'line': b'-- Found rviz_common: 11.2.8 (/opt/ros/humble/share/rviz_common/cmake)\n'}
+[8.420458] (-) TimerEvent: {}
+[8.520906] (-) TimerEvent: {}
+[8.621573] (-) TimerEvent: {}
+[8.723226] (-) TimerEvent: {}
+[8.824723] (-) TimerEvent: {}
+[8.925393] (-) TimerEvent: {}
+[9.027259] (-) TimerEvent: {}
+[9.128417] (-) TimerEvent: {}
+[9.228884] (-) TimerEvent: {}
+[9.329442] (-) TimerEvent: {}
+[9.398828] (slam_toolbox) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[9.429627] (-) TimerEvent: {}
+[9.484013] (slam_toolbox) StdoutLine: {'line': b'-- Found OGRE\n'}
+[9.484605] (slam_toolbox) StdoutLine: {'line': b'--   static     : OFF\n'}
+[9.484935] (slam_toolbox) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[9.485283] (slam_toolbox) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[9.485674] (slam_toolbox) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[9.485962] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[9.486301] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[9.486644] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[9.487132] (slam_toolbox) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[9.487436] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[9.487762] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[9.488118] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[9.488410] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[9.513732] (slam_toolbox) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[9.529829] (-) TimerEvent: {}
+[9.630676] (-) TimerEvent: {}
+[9.731176] (-) TimerEvent: {}
+[9.831772] (-) TimerEvent: {}
+[9.932460] (-) TimerEvent: {}
+[10.033117] (-) TimerEvent: {}
+[10.133586] (-) TimerEvent: {}
+[10.234029] (-) TimerEvent: {}
+[10.334575] (-) TimerEvent: {}
+[10.391169] (slam_toolbox) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[10.434806] (-) TimerEvent: {}
+[10.538292] (-) TimerEvent: {}
+[10.638941] (-) TimerEvent: {}
+[10.677030] (slam_toolbox) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[10.739143] (-) TimerEvent: {}
+[10.839684] (-) TimerEvent: {}
+[10.940290] (-) TimerEvent: {}
+[11.040816] (-) TimerEvent: {}
+[11.141607] (-) TimerEvent: {}
+[11.242148] (-) TimerEvent: {}
+[11.342683] (-) TimerEvent: {}
+[11.425294] (slam_toolbox) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[11.442923] (-) TimerEvent: {}
+[11.476903] (slam_toolbox) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[11.543175] (-) TimerEvent: {}
+[11.643877] (-) TimerEvent: {}
+[11.744874] (-) TimerEvent: {}
+[11.799402] (slam_toolbox) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[11.799740] (slam_toolbox) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[11.845086] (-) TimerEvent: {}
+[11.919101] (slam_toolbox) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[11.919361] (slam_toolbox) StdoutLine: {'line': b'-- Looking for connect\n'}
+[11.945121] (-) TimerEvent: {}
+[12.040154] (slam_toolbox) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[12.040550] (slam_toolbox) StdoutLine: {'line': b'-- Looking for remove\n'}
+[12.045250] (-) TimerEvent: {}
+[12.145551] (-) TimerEvent: {}
+[12.152278] (slam_toolbox) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[12.152622] (slam_toolbox) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[12.245651] (-) TimerEvent: {}
+[12.277226] (slam_toolbox) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[12.277466] (slam_toolbox) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[12.345736] (-) TimerEvent: {}
+[12.430085] (slam_toolbox) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[12.432332] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[12.432466] (slam_toolbox) StdoutLine: {'line': b'-- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND\n'}
+[12.445819] (-) TimerEvent: {}
+[12.546157] (-) TimerEvent: {}
+[12.646690] (-) TimerEvent: {}
+[12.747106] (-) TimerEvent: {}
+[12.847408] (-) TimerEvent: {}
+[12.853584] (slam_toolbox) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[12.947647] (-) TimerEvent: {}
+[13.047906] (-) TimerEvent: {}
+[13.098617] (slam_toolbox) StdoutLine: {'line': b'-- Found rviz_default_plugins: 11.2.8 (/opt/ros/humble/share/rviz_default_plugins/cmake)\n'}
+[13.148038] (-) TimerEvent: {}
+[13.248372] (-) TimerEvent: {}
+[13.348953] (-) TimerEvent: {}
+[13.449615] (-) TimerEvent: {}
+[13.549959] (-) TimerEvent: {}
+[13.650425] (-) TimerEvent: {}
+[13.750687] (-) TimerEvent: {}
+[13.808980] (slam_toolbox) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system serialization filesystem thread \n'}
+[13.850916] (-) TimerEvent: {}
+[13.891885] (slam_toolbox) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[13.901917] (slam_toolbox) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):\n'}
+[13.902178] (slam_toolbox) StderrLine: {'line': b'  Could NOT find CHOLMOD (missing: CHOLMOD_INCLUDE_DIR CHOLMOD_LIBRARIES)\n'}
+[13.902265] (slam_toolbox) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[13.902329] (slam_toolbox) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)\n'}
+[13.902391] (slam_toolbox) StderrLine: {'line': b'  CMake/FindCHOLMOD.cmake:86 (find_package_handle_standard_args)\n'}
+[13.902450] (slam_toolbox) StderrLine: {'line': b'  CMakeLists.txt:76 (find_package)\n'}
+[13.902510] (slam_toolbox) StderrLine: {'line': b'\n'}
+[13.902567] (slam_toolbox) StderrLine: {'line': b'\x1b[0m\n'}
+[13.902624] (slam_toolbox) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[13.902688] (slam_toolbox) StdoutLine: {'line': b'See also "/mac_remote/ws/build/slam_toolbox/CMakeFiles/CMakeOutput.log".\n'}
+[13.916158] (slam_toolbox) CommandEnded: {'returncode': 1}
+[13.951112] (-) TimerEvent: {}
+[13.989780] (slam_toolbox) JobEnded: {'identifier': 'slam_toolbox', 'rc': 1}
+[13.993244] (-) EventReactorShutdown: {}

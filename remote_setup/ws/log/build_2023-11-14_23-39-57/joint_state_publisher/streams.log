@@ -1,0 +1,38 @@
+[0.885s] Invoking command in '/mac_remote/ws/src/joint_state_publisher/joint_state_publisher': PYTHONPATH=/mac_remote/ws/build/joint_state_publisher/prefix_override:/mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/joint_state_publisher build --build-base /mac_remote/ws/build/joint_state_publisher/build install --record /mac_remote/ws/build/joint_state_publisher/install.log --single-version-externally-managed
+[1.141s] running egg_info
+[1.142s] creating ../../../build/joint_state_publisher/joint_state_publisher.egg-info
+[1.142s] writing ../../../build/joint_state_publisher/joint_state_publisher.egg-info/PKG-INFO
+[1.142s] writing dependency_links to ../../../build/joint_state_publisher/joint_state_publisher.egg-info/dependency_links.txt
+[1.142s] writing entry points to ../../../build/joint_state_publisher/joint_state_publisher.egg-info/entry_points.txt
+[1.143s] writing requirements to ../../../build/joint_state_publisher/joint_state_publisher.egg-info/requires.txt
+[1.143s] writing top-level names to ../../../build/joint_state_publisher/joint_state_publisher.egg-info/top_level.txt
+[1.143s] writing manifest file '../../../build/joint_state_publisher/joint_state_publisher.egg-info/SOURCES.txt'
+[1.144s] reading manifest file '../../../build/joint_state_publisher/joint_state_publisher.egg-info/SOURCES.txt'
+[1.145s] adding license file 'LICENSE'
+[1.145s] writing manifest file '../../../build/joint_state_publisher/joint_state_publisher.egg-info/SOURCES.txt'
+[1.148s] running build
+[1.148s] running build_py
+[1.148s] creating /mac_remote/ws/build/joint_state_publisher/build
+[1.148s] creating /mac_remote/ws/build/joint_state_publisher/build/lib
+[1.148s] creating /mac_remote/ws/build/joint_state_publisher/build/lib/joint_state_publisher
+[1.148s] copying joint_state_publisher/__init__.py -> /mac_remote/ws/build/joint_state_publisher/build/lib/joint_state_publisher
+[1.149s] copying joint_state_publisher/joint_state_publisher.py -> /mac_remote/ws/build/joint_state_publisher/build/lib/joint_state_publisher
+[1.149s] running install
+[1.149s] running install_lib
+[1.150s] creating /mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages/joint_state_publisher
+[1.150s] copying /mac_remote/ws/build/joint_state_publisher/build/lib/joint_state_publisher/__init__.py -> /mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages/joint_state_publisher
+[1.150s] copying /mac_remote/ws/build/joint_state_publisher/build/lib/joint_state_publisher/joint_state_publisher.py -> /mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages/joint_state_publisher
+[1.151s] byte-compiling /mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages/joint_state_publisher/__init__.py to __init__.cpython-310.pyc
+[1.151s] byte-compiling /mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages/joint_state_publisher/joint_state_publisher.py to joint_state_publisher.cpython-310.pyc
+[1.154s] running install_data
+[1.155s] creating /mac_remote/ws/install/joint_state_publisher/share/ament_index
+[1.155s] creating /mac_remote/ws/install/joint_state_publisher/share/ament_index/resource_index
+[1.155s] creating /mac_remote/ws/install/joint_state_publisher/share/ament_index/resource_index/packages
+[1.155s] copying resource/joint_state_publisher -> /mac_remote/ws/install/joint_state_publisher/share/ament_index/resource_index/packages
+[1.155s] copying package.xml -> /mac_remote/ws/install/joint_state_publisher/share/joint_state_publisher
+[1.155s] running install_egg_info
+[1.157s] Copying ../../../build/joint_state_publisher/joint_state_publisher.egg-info to /mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages/joint_state_publisher-2.4.0-py3.10.egg-info
+[1.158s] running install_scripts
+[1.177s] Installing joint_state_publisher script to /mac_remote/ws/install/joint_state_publisher/lib/joint_state_publisher
+[1.177s] writing list of installed files to '/mac_remote/ws/build/joint_state_publisher/install.log'
+[1.201s] Invoked command in '/mac_remote/ws/src/joint_state_publisher/joint_state_publisher' returned '0': PYTHONPATH=/mac_remote/ws/build/joint_state_publisher/prefix_override:/mac_remote/ws/install/joint_state_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/joint_state_publisher build --build-base /mac_remote/ws/build/joint_state_publisher/build install --record /mac_remote/ws/build/joint_state_publisher/install.log --single-version-externally-managed

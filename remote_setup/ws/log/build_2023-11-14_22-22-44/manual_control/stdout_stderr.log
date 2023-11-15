@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing manual_control.egg-info/PKG-INFO
+writing dependency_links to manual_control.egg-info/dependency_links.txt
+writing entry points to manual_control.egg-info/entry_points.txt
+writing requirements to manual_control.egg-info/requires.txt
+writing top-level names to manual_control.egg-info/top_level.txt
+reading manifest file 'manual_control.egg-info/SOURCES.txt'
+writing manifest file 'manual_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /mac_remote/ws/install/manual_control/lib/python3.10/site-packages/manual-control.egg-link (link to .)
+Installing manual_control_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+Installing odom_test_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+Installing odom_to_tf_node script to /mac_remote/ws/install/manual_control/lib/manual_control
+
+Installed /mac_remote/ws/build/manual_control
+running install_data

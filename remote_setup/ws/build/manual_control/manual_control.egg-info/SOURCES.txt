@@ -10,7 +10,13 @@ setup.py
 ../../build/manual_control/manual_control.egg-info/zip-safe
 manual_control/__init__.py
 manual_control/manual_node.py
+manual_control/odom_test_node.py
+manual_control/odom_to_tf_node.py
+manual_control.egg-info/PKG-INFO
+manual_control.egg-info/SOURCES.txt
+manual_control.egg-info/dependency_links.txt
+manual_control.egg-info/entry_points.txt
+manual_control.egg-info/requires.txt
+manual_control.egg-info/top_level.txt
+manual_control.egg-info/zip-safe
 resource/manual_control
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

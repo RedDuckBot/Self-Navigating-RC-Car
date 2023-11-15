@@ -1,8 +1,1 @@
-<?xml version="1.0"?>
-<robot name="macnav" xmlns:xacro="http://www.ros.org/wiki/xacro">
-
-    <xacro:include filename="common_properties.xacro" />
-    <xacro:include filename="macnav_base.xacro" />
-    <xacro:include filename="macnav_lidar.xacro"/>
-
-</robot>
+/mac_remote/ws/src/macnav_description/urdf/macnav.urdf.xacro

@@ -315,17 +315,17 @@ mac_messages__rosidl_typesupport_cpp/fast:
 .PHONY : mac_messages__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_mac_messages
+# Target rules for targets named ament_cmake_python_symlink_mac_messages
 
 # Build rule for target.
-ament_cmake_python_copy_mac_messages: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_mac_messages
-.PHONY : ament_cmake_python_copy_mac_messages
+ament_cmake_python_symlink_mac_messages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_mac_messages
+.PHONY : ament_cmake_python_symlink_mac_messages
 
 # fast build rule for target.
-ament_cmake_python_copy_mac_messages/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_mac_messages.dir/build.make CMakeFiles/ament_cmake_python_copy_mac_messages.dir/build
-.PHONY : ament_cmake_python_copy_mac_messages/fast
+ament_cmake_python_symlink_mac_messages/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_mac_messages.dir/build.make CMakeFiles/ament_cmake_python_symlink_mac_messages.dir/build
+.PHONY : ament_cmake_python_symlink_mac_messages/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_mac_messages_egg
@@ -683,7 +683,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_mac_messages_egg"
-	@echo "... ament_cmake_python_copy_mac_messages"
+	@echo "... ament_cmake_python_symlink_mac_messages"
 	@echo "... mac_messages"
 	@echo "... mac_messages__cpp"
 	@echo "... mac_messages__py"
