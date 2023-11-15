@@ -1,4 +1,0 @@
-source;share/mac_messages/environment/ament_prefix_path.sh
-source;share/mac_messages/environment/library_path.sh
-source;share/mac_messages/environment/path.sh
-source;share/mac_messages/environment/pythonpath.sh

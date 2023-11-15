@@ -1,4 +1,9 @@
 ws/log/
 ws/build/
 ws/install/
+remote_setup/ws/log/
+remote_setup/ws/build/
+remote_setup/ws/install/
 *.pyc
+remote_setup/cyclonedds.xml
+remote_setup/Scripts/

@@ -1,3 +1,0 @@
-[console_scripts]
-joint_state_publisher = joint_state_publisher.joint_state_publisher:main
-

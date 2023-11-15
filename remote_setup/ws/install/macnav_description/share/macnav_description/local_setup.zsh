@@ -1,1 +1,0 @@
-/mac_remote/ws/build/macnav_description/ament_cmake_environment_hooks/local_setup.zsh

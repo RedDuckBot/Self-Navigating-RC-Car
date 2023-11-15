@@ -1,9 +1,0 @@
-/mac_remote/ws/build/macnav_drive/CMakeFiles/uninstall.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/macnav_drive_uninstall.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/test.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/edit_cache.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/rebuild_cache.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/list_install_components.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/install.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/install/local.dir
-/mac_remote/ws/build/macnav_drive/CMakeFiles/install/strip.dir
