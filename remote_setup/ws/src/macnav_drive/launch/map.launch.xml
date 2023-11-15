@@ -1,6 +1,7 @@
 <launch>
         <let name="urdf_path" value="$(find-pkg-share macnav_description)/urdf/macnav.urdf.xacro"/>
-        <let name="rviz_config_path" value="$(find-pkg-share macnav_drive)/config/drive_config.rviz"/> 
+        <let name="rviz_config_path" value="$(find-pkg-share macnav_drive)/config/drive_conf.rviz"/> 
+        <let name="slam_toolbox_config_path" value="$(find-pkg-share macnav_drive)/config/mapper_params_online_async.yaml"/>
 
         <node pkg="robot_state_publisher" exec="robot_state_publisher">
             <param name="robot_description" value="$(command 'xacro $(var urdf_path)')"/>
@@ -15,4 +16,7 @@
 
     <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)"/>
 
+    <include file="$(find-pkg-share slam_toolbox)/launch/online_async_launch.py">
+        <arg name="params_file" value="$(var slam_toolbox_config_path)"/>
+    </include>
 </launch>
