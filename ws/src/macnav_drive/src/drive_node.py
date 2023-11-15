@@ -2,6 +2,7 @@
 import rclpy, serial
 from rclpy.node import Node 
 from mac_messages.msg import Drive 
+from geometry_msgs import Twist
 
 #Node passes xbox input to topic /arduino_channel
 arduino = serial.Serial(port="/dev/ttyACM0",baudrate=115200)
@@ -10,25 +11,15 @@ class Arduino_node(Node):
     def __init__(self):
         super().__init__("manual_node")
         #create arduino subscribing node
-        self.arduino_sub = self.create_subscription(Drive,"/arduino_channel",
+        self.vel_sub = self.create_subscription(Twist,"/cmd_vel",
             self.send_drive_msg,10)
         self.get_logger().info("Arduino manual node initialized")
 
     def send_drive_msg(self,msg):
-        command = msg.command
-
-        if command in ["E","D"]:
-            #command for drive modes
-            arduino.write(command.encode())
-            arduino.flush()
-        elif command in ["S","F","B"]:
-            #command for steering, forward and backward modes
-            arduino.write(command.encode())
-            arduino.flush()
-            arduino.write(str(msg.control_input).encode())
-            arduino.flush()
-        else:
-            self.get_logger().info("Invalid drive message")
+        arduino.write(msg.angular.z)
+        arduino.flush()
+        arduino.write(msg.linear.x)
+        arduino.flush()
 
 def main(args=None):
     rclpy.init(args=args)
