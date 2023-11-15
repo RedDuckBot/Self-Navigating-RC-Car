@@ -6,6 +6,4 @@
 string command 
 
 #Associated with speed or angle
-#Speed value range: 0-255
-#Angle value range: 0-80
 int16 control_input
