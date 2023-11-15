@@ -1,4 +1,0 @@
-[console_scripts]
-arduino_node = manual_control.manual_arduino_node:main
-manual_turtle_node = manual_control.turtle_node:main
-
