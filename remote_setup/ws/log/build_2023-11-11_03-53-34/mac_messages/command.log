@@ -1,1 +1,0 @@
-Invoking command in '/home/dan/MacEwan-Navigation-Bot/remote_setup/ws/build/mac_messages': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dan/MacEwan-Navigation-Bot/remote_setup/ws/build/mac_messages -- -j12 -l12
