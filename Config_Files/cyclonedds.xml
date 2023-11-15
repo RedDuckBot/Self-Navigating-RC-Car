@@ -24,6 +24,7 @@
       <Peers>
         <Peer Address="localhost"/>
         <Peer Address="" />
+
       </Peers>
     </Discovery>
 
