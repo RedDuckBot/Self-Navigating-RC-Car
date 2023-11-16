@@ -18,7 +18,7 @@ RUN apt-get install -y python3-pip
 RUN apt-get install ros-humble-rplidar-ros
 RUN apt-get install -y ros-humble-navigation2
 RUN apt-get install -y ros-humble-nav2-bringup
-RUN apt-get install -y ros-humble-joint-state-broadcaster
+RUN apt-get install -y ros-humble-joint-state-publisher
 RUN python3 -m pip install -r ./Packages/requirements.txt
 RUN apt-get install -y ros-humble-rmw-cyclonedds-cpp
 RUN apt-get install -y tmux 

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import rclpy, serial
 from rclpy.node import Node 
-from mac_messages.msg import Drive 
 from geometry_msgs import Twist
 
 #Node passes xbox input to topic /arduino_channel
