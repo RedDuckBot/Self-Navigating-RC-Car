@@ -2,7 +2,7 @@ import cv2, socket, pickle
 import numpy as np 
 
 s = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-host_ip = "10.60.116.176"
+host_ip = "TODO_CHANGE"
 port = 6669
 s.bind((host_ip,port))
 
