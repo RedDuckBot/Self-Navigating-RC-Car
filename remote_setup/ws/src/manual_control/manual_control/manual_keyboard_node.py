@@ -55,10 +55,10 @@ def main(args=None):
                 lin = 0.0
             elif key =='x':
                 lin = -speeds[speeds_index]
-            elif key =='a':
+            elif key =='d':
                 if ang > -100.0:
                     ang -= 20.0
-            elif key =='d':
+            elif key =='a':
                 if ang < 100.0:
                     ang += 20.0
             else:
