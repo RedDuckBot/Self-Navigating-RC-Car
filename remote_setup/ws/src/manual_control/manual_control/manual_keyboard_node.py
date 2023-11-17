@@ -9,7 +9,7 @@ from rclpy.qos import QoSProfile
 import termios
 import tty
 
-def getKey(settings):
+def getKey():
     tty.setraw(sys.stdin.fileno())
     rlist, _, _ = select.select([sys.stdin], [], [], 0.1)
     if rlist:
@@ -17,13 +17,13 @@ def getKey(settings):
     else:
         key = ''
 
-    termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
+    #termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
     return key
 
 
 
 def main(args=None):
-    settings = termios.tcgetattr(sys.stdin)
+    #settings = termios.tcgetattr(sys.stdin)
 
     rclpy.init()
 
@@ -38,7 +38,7 @@ def main(args=None):
 
     try:
         while(1):
-            key = getKey(settings)
+            key = getKey()
             if key =='1':
                 speeds_index = 0
             elif key =='2':

@@ -1,6 +1,0 @@
-base for driving macnav
-
-map.launch.xml
-    launches slam nodes and manual control nodes to generate slam maps with macnav
-    ensure xhost +
-    xbox controller on /dev/input/js0
