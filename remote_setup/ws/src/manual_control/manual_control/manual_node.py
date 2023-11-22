@@ -8,7 +8,7 @@ from geometry_msgs.msg import Twist
 #Node passes xbox input to topic /arduino_channel
 
 class Xbox360_contr_node(Node):
-    SPEEDS = [0.0, 1.11,1.95, 1.59, 2.15] # m/s
+    SPEEDS = [0.0, 1.2, 1.59, 2.15] # m/s
 
     #Scaled by order of 2 from joystick inputs
     JOY_MIN = -100
@@ -22,7 +22,7 @@ class Xbox360_contr_node(Node):
 
     def __init__(self):
         super().__init__("xbox_controller")
-        self.speedIndex = 2
+        self.speedIndex = 1
         self.cur_angular_vel =  0.0
         self.current_linear_vel = 0.0
         self.allow_joystick_steering = False
@@ -44,7 +44,7 @@ class Xbox360_contr_node(Node):
     def apply_brake(self, button):
         msg = self.create_message(self.SPEEDS[0],self.cur_angular_vel)
 
-        self.speedIndex = 2
+        self.speedIndex = 1
         print("Brake applied!")
         self.xbox_pub.publish(msg)
 
@@ -64,15 +64,11 @@ class Xbox360_contr_node(Node):
             if not (axis.x > -0.25 and axis.x < 0.25):
                 joy_input = int(axis.x * 100)
                 servo_angle = self.map_range(joy_input)  
-                steer_angle =  self.STEER_CENTER - servo_angle
+                #steer_angle =  self.STEER_CENTER - servo_angle
+                steer_angle = self.get_steering_angle(servo_angle)
                 #if (servo_angle > self.STEER_CENTER): steer_angle *= -1 
                 angular_vel_z = self.current_linear_vel * \
-                    ((math.tan((math.pi/180) * steer_angle)) / self.WHEEL_BASE)
-                if (self.current_linear_vel > 0):
-                    steer_angle = (180/math.pi) * math.atan((angular_vel_z/self.current_linear_vel) * self.WHEEL_BASE)
-                    print(steer_angle)
-                
-
+                    ((math.tan(steer_angle)) / self.WHEEL_BASE)
             else:
                 angular_vel_z = 0.0
 
@@ -117,6 +113,13 @@ class Xbox360_contr_node(Node):
         return (joy_input - self.JOY_MIN) * (self.STEER_MAX - self.STEER_MIN) //  \
                 (self.JOY_MAX - self.JOY_MIN) + self.STEER_MIN
 
+   #Return steering angles (rads) based on linear regression lines
+   #Derived from test data for estimating steering angle for MacNav 
+    def get_steering_angle(self, servo_angle_input):
+        if servo_angle_input > 38: #Steering right
+            return (9.58E-3*servo_angle_input - 0.349) * (-1)
+        else: #Steering left
+            return -8.02E-3*servo_angle_input + 0.356
 
 def main(args=None):
     rclpy.init(args=args)
