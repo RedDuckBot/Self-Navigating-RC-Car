@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find-pkg-share macnav_drive)/launch/navigation_launch.py"/>
+
+    <include file="$(find-pkg-share macnav_drive)/launch/twist_map.launch.xml"/>
+
+    <node pkg="manual_control" exec="manual_control_node"/>
+
+
+</launch>
