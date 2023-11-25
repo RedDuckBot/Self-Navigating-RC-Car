@@ -164,12 +164,12 @@ controller_server:
       movement_time_allowance: 10.0
     goal_checker:
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.
       yaw_goal_tolerance: 0.25
       stateful: True
     FollowPath:
       plugin: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
-      desired_linear_vel: 1.59 
+      desired_linear_vel: 0.66
       lookahead_dist: 0.6
       min_lookahead_dist: 0.3
       max_lookahead_dist: 0.9
@@ -279,9 +279,9 @@ velocity_smoother:
     smoothing_frequency: 8.0
     scale_velocities: false
     feedback: "OPEN_LOOP"
-    max_velocity: [2.15, 0.0, 6.34]
-    min_velocity: [-1.11, 0.0, -6.34]
-    deadband_velocity: [1.11, 0.0, 0.0]
+    max_velocity: [1.23, 0.0, 6.34]
+    min_velocity: [-1.23, 0.0, -6.34]
+    deadband_velocity: [0.66, 0.0, 0.0]
     velocity_timeout: 1.0
     max_accel: [2.5, 0.0, 3.2]
     max_decel: [-2.5, 0.0, -3.2]

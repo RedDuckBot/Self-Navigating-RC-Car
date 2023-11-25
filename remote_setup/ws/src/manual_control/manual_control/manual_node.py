@@ -20,6 +20,9 @@ class Xbox360_contr_node(Node):
     STEER_CENTER = 38
     WHEEL_BASE = 0.265 #meters
 
+    prev_ang = 0
+    prev_lin = 0
+
     def __init__(self):
         super().__init__("xbox_controller")
         self.speedIndex = 1
@@ -72,12 +75,14 @@ class Xbox360_contr_node(Node):
             else:
                 angular_vel_z = 0.0
 
-            msg = self.create_message(self.current_linear_vel, angular_vel_z )
-            self.xbox_pub.publish(msg)
+            if self.current_linear_vel != self.prev_lin or angular_vel_z != self.prev_ang:
+                msg = self.create_message(self.current_linear_vel, angular_vel_z )  
+                self.xbox_pub.publish(msg)
+                self.prev_ang = angular_vel_z
+                self.prev_lin = self.current_linear_vel
 
     #Callback function associated with shifting speed
     def on_speed(self, button):
-
         if button.name == "button_x": 
             #Move forward
             lin_vel_x = self.SPEEDS[self.speedIndex] 
@@ -90,8 +95,11 @@ class Xbox360_contr_node(Node):
 
         print(f"Speed shifted: {self.SPEEDS[self.speedIndex]} m/s")
         self.speedIndex = (self.speedIndex + 1) % len(self.SPEEDS)
-        msg = self.create_message(lin_vel_x, self.cur_angular_vel)
-        self.xbox_pub.publish(msg)
+        if lin_vel_x != self.prev_lin or self.cur_angular_vel != self.prev_ang:
+            msg = self.create_message(lin_vel_x, self.cur_angular_vel)
+            self.xbox_pub.publish(msg)
+            self.prev_lin = lin_vel_x
+            self.prev_ang = self.cur_angular_vel
 
     def create_message(self, lin_vel_x, ang_vel_z):
         msg = Twist()

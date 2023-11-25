@@ -1,6 +1,6 @@
 <launch>
         <let name="urdf_path" value="$(find-pkg-share macnav_description)/urdf/macnav.urdf.xacro"/>
-        <let name="rviz_config_path" value="$(find-pkg-share macnav_drive)/config/mapping.rviz"/> 
+        <let name="rviz_config_path" value="$(find-pkg-share macnav_drive)/config/nav_conf.rviz"/> 
         <let name="slam_toolbox_config_path" value="$(find-pkg-share macnav_drive)/config/mapper_params_online_async.yaml"/>
 
         <node pkg="robot_state_publisher" exec="robot_state_publisher">
