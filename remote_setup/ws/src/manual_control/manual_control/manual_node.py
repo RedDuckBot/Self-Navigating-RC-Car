@@ -8,7 +8,7 @@ from geometry_msgs.msg import Twist
 #Node passes xbox input to topic /arduino_channel
 
 class Xbox360_contr_node(Node):
-    SPEEDS = [0.0, 1.2, 1.59, 2.15] # m/s
+    SPEEDS = [0.0, 0.6557, 0.8461, 1.23] # m/s
 
     #Scaled by order of 2 from joystick inputs
     JOY_MIN = -100
