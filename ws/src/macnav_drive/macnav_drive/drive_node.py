@@ -17,17 +17,16 @@ class Arduino_node(Node):
         #create arduino subscribing node
         self.vel_sub = self.create_subscription(Twist,"/cmd_vel",
             self.send_drive_msg,10)
-        self.get_logger().info("Arduino manual node initialized")
+        self.get_logger().info("Arduino drive node initialized")
 
     def send_drive_msg(self,msg):
         if(msg.angular.z != self.prevAng or msg.linear.x != self.prevLin):
-            print("sending", int(msg.angular.z), int(msg.linear.x))
-            sendTwist(arduino, int(msg.angular.z), int(msg.linear.x))
+            sendTwist(arduino, msg.angular.z, msg.linear.x)
             self.prevAng = msg.angular.z
             self.prevLin = msg.linear.x
 
 def sendTwist(ard, ang, lin):
-    ard.write(f"{ang},{lin}\n".encode())
+    ard.write(f"{lin}\n{ang}\n".encode())
 
 def main(args=None):
     rclpy.init(args=args)

@@ -27,6 +27,8 @@ setup(
         'console_scripts': [
             "drive_node = macnav_drive.drive_node:main",
             "odom_node = macnav_drive.odom_node:main",
+            "odom_node_no_imu = macnav_drive.odom_node_no_imu:main",
+            "imu_node = macnav_drive.pub_IMU_node:main",
             "check_conn_node = macnav_drive.check_conn_node:main"
         ],
     },

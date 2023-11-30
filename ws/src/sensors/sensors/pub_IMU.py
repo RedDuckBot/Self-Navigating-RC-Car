@@ -29,7 +29,7 @@ def listen_serial_conn():
                 data_ready = True
             except:
                 self.get_logger().info("Failed to get data")
-            if data_ready = True:
+            if data_ready == True:
                 IMU_data.put(temp_IMU,block=False)
             
         else:

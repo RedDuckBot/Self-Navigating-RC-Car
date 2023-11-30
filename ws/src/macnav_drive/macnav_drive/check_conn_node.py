@@ -1,5 +1,5 @@
 import socket, threading, signal,time
-from mac_messages.msg import Drive
+from geometry_msgs.msg import Twist
 import rclpy
 from rclpy.node import Node
 
@@ -12,7 +12,7 @@ to stop moving.
 done_listening = False
 lock = threading.Lock()
 
-host = ""
+host = "10.60.110.93"
 port = 6670
 
 def handler(signum, frame):
@@ -42,12 +42,19 @@ def check_connection(socket_obj):
 class Client_conn_node(Node):
     def __init__(self):
         super().__init__("connection_node")
-        self.publisher_ = self.create_publisher(Drive, '/arduino_channel',1)
+        self.publisher_ = self.create_publisher(Twist, '/cmd_vel',1)
         self.get_logger().info("Connection node initialized")
 
     def publish_MSG(self):
-        msg = Drive()
-        msg.command = "D"
+        msg = Twist()
+        msg.linear.x = 0.0 
+        msg.linear.y = 0.0 
+        msg.linear.z = 0.0 
+
+        msg.angular.x = 0.0
+        msg.angular.y = 0.0
+        msg.angular.z = 0.0
+
         self.publisher_.publish(msg)
 
 def main():
