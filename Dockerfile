@@ -19,6 +19,7 @@ RUN apt-get install iputils-ping -y
 RUN python3 -m pip install -r ./Packages/requirements.txt
 Run apt-get install -y htop 
 RUN apt-get install -y tmux 
+Run apt-get install -y vim
 
 #Source ros workspaces and custom commands for root user
 RUN echo "source /mac_everything/Scripts/mac_commands.sh" >> \

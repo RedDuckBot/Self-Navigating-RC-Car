@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+    <link name="base_link"/>
+
+    <link name="base_footprint"/>
+
+    <link name="chassis">
+        <visual>
+            <geometry>
+                <box size="${chassis_length} ${chassis_width} ${chassis_height}" />
+            </geometry>
+            <origin xyz="0 0 ${chassis_height / 2.0}" rpy="0 0 0" />
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${chassis_length} ${chassis_width} ${chassis_height}" />
+            </geometry>
+        </collision>
+        <xacro:box_inertia m="5.0" l="${chassis_length}" w="${chassis_width}" h="${chassis_height}"
+                    xyz="0 0 ${chassis_height / 2.0}" rpy="0 0 0" />
+    </link>
+
+    <xacro:macro name="wheel_link" params="prefix">
+        <link name="${prefix}_wheel_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+                </geometry>
+                <origin xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
+                <material name="blue" />
+            </visual>
+            <xacro:cylinder_inertia m="1.0" r="${wheel_radius}" h="${wheel_length}" 
+                                    xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
+        </link>
+    </xacro:macro>
+
+    <xacro:wheel_link prefix="front_left"/>
+    <xacro:wheel_link prefix="front_right"/>
+    <xacro:wheel_link prefix="rear_left"/>
+    <xacro:wheel_link prefix="rear_right"/>
+
+    <link name="steer_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${chassis_height/10} ${chassis_height/10} ${chassis_height/10}"/>
+            </geometry>
+        </visual>
+        <xacro:box_inertia m="0.01" l="${chassis_height/10}" w="${chassis_height/10}" h="${chassis_height/10}" xyz="0 0 0" rpy="0 0 0"/>
+    </link>
+
+
+    <link name="front_left_steer_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${chassis_height/10} ${chassis_height/10} ${chassis_height/10}"/>
+            </geometry>
+        </visual>
+        <xacro:box_inertia m="0.01" l="${chassis_height/10}" w="${chassis_height/10}" h="${chassis_height/10}" xyz="0 0 0" rpy="0 0 0"/>
+    </link> 
+
+    <link name="front_right_steer_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${chassis_height/10} ${chassis_height/10} ${chassis_height/10}"/>
+            </geometry>
+        </visual>
+        <xacro:box_inertia m="0.01" l="${chassis_height/10}" w="${chassis_height/10}" h="${chassis_height/10}" xyz="0 0 0" rpy="0 0 0"/>
+    </link>
+
+    <link name="rear_axle_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${wheel_radius/2}" length="${chassis_width}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
+               <material name="blue" />
+        </visual>
+        <xacro:cylinder_inertia m="1.0" r="${wheel_radius/2}" h="${chassis_width}" 
+                            xyz="0 0 0" rpy="${pi / 2.0} 0 0" />
+    </link>
+
+    <joint name="base_footprint_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_footprint"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="chassis"/>
+        <origin xyz="0 0 ${wheel_radius/2}" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="steer_joint" type="revolute">
+        <parent link="chassis"/>
+        <child link="steer_link"/>
+        <origin xyz="${chassis_length - (3*chassis_length/5)} 0 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="100" lower="-0.5" upper="0.5" velocity="10"/>
+    </joint>
+
+
+    <joint name="front_left_steer_chassis_joint" type="revolute">
+        <mimic joint="steer_joint"/>
+        <parent link="chassis"/>
+        <child link="front_left_steer_link"/>
+        <origin xyz="${chassis_length - (3*chassis_length/5)} ${(chassis_width + wheel_length) / 2} 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="100" lower="-0.5" upper="0.5" velocity="10"/>
+    </joint>
+
+    <joint name="front_left_wheel_steer_joint" type="continuous">
+        <parent link="front_left_steer_link"/>
+        <child link="front_left_wheel_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <joint name="front_right_steer_chassis_joint" type="revolute">
+        <mimic joint="steer_joint"/>
+        <parent link="chassis"/>
+        <child link="front_right_steer_link"/>
+        <origin xyz="${chassis_length - (3*chassis_length/5)} ${-(chassis_width + wheel_length) / 2} 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="100" lower="-0.5" upper="0.5" velocity="10"/>
+    </joint>
+
+    <joint name="front_right_wheel_steer_joint" type="continuous">
+        <parent link="front_right_steer_link"/>
+        <child link="front_right_wheel_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <joint name="rear_axle_joint" type="continuous">
+        <parent link="chassis"/>
+        <child link="rear_axle_link"/>
+        <origin xyz="${-chassis_length + (3*chassis_length/5)} 0 0" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <joint name="rear_left_wheel_chassis_joint" type="fixed">
+        <parent link="rear_axle_link"/>
+        <child link="rear_left_wheel_link"/>
+        <origin xyz="0 ${(chassis_width + wheel_length) / 2} 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="rear_right_wheel_chassis_joint" type="fixed">
+        <parent link="rear_axle_link"/>
+        <child link="rear_right_wheel_link"/>
+        <origin xyz="0 ${-(chassis_width + wheel_length) / 2} 0" rpy="0 0 0"/>
+    </joint>
+
+
+
+
+
+
+</robot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
