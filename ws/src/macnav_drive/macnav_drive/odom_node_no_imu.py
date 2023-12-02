@@ -72,6 +72,7 @@ class Odom_node(Node):
             
             # update heading
             self.heading += d_heading
+            self.get_logger().info(f"{counts}")
 
             self.publish_odom()
 

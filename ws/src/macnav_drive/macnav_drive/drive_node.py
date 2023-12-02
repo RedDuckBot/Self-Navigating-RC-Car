@@ -2,6 +2,7 @@
 import rclpy, serial
 from rclpy.node import Node 
 from geometry_msgs.msg import Twist
+import struct 
 
 #Node passes xbox input to topic /arduino_channel
 arduino = serial.Serial(port="/dev/ttyACM0",baudrate=115200)
@@ -27,6 +28,7 @@ class Arduino_node(Node):
 
 def sendTwist(ard, ang, lin):
     ard.write(f"{lin}\n{ang}\n".encode())
+
 
 def main(args=None):
     rclpy.init(args=args)
