@@ -1,7 +1,9 @@
 <launch>
     <let name="urdf_path" value="$(find-pkg-share macnav_description)/urdf/macnav.urdf.xacro"/>
     <let name="rviz_config_path" value="$(find-pkg-share macnav_drive)/config/nav_map_conf.rviz"/> 
-    <let name="map_path" value="$(find-pkg-share macnav_drive)/config/building5.yaml"/>
+    <let name="map_path" value="$(find-pkg-share macnav_drive)/config/building567.yaml"/>
+    <let name="2map_path" value="$(find-pkg-share macnav_drive)/config/corner.yaml"/>
+    
     <!-- <let name="map_path" value="clubroom.yaml"/> -->
 
     

@@ -10,11 +10,9 @@
    <node pkg="joint_state_publisher" exec="joint_state_publisher"/>
 
     <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)"/>  
-
-    <include file="$(find-pkg-share macnav_drive)/launch/navigation_with_mapserver_launch.py">
-        <arg name="map" value="$(var map_path)"/>
-    </include>
-
+   
+   
+   
     <include file="$(find-pkg-share macnav_drive)/launch/localization_launch.py"/>
 
 </launch>

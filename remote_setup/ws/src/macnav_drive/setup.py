@@ -29,6 +29,8 @@ setup(
     entry_points={
         'console_scripts': [ 
             "odom_to_tf_node = macnav_drive.odom_to_tf_node:main",
+            "localization_node = macnav_drive.localization_node:main",
+            "tf_broadcaster = macnav_drive.tf_broadcaster:main"
         ],
     },
 )
