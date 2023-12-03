@@ -14,7 +14,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),        
         ('share/' + package_name + '/launch',
-            glob.glob(os.path.join('launch', '*.launch.py'))),
+            glob.glob(os.path.join('launch', '*.launch.xml'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -26,7 +26,10 @@ setup(
     entry_points={
         'console_scripts': [
             "drive_node = macnav_drive.drive_node:main",
-            "odom_node = macnav_drive.odom_node:main"
+            "odom_node = macnav_drive.odom_node:main",
+            "odom_node_no_imu = macnav_drive.odom_node_no_imu:main",
+            "imu_node = macnav_drive.pub_IMU_node:main",
+            "check_conn_node = macnav_drive.check_conn_node:main"
         ],
     },
 )
