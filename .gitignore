@@ -1,5 +1,8 @@
 macBot_ros2_ws/log/
 macBot_ros2_ws/build/
 macBot_ros2_ws/install/
+remote_setup/ros2_ws/log/
+remote_setup/ros2_ws/install/
+remote_setup/ros2_ws/build/
 Config_Files/
 *.pyc

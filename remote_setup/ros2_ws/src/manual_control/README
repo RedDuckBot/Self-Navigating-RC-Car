@@ -1,0 +1,7 @@
+Package allows for manual control of MacNav
+
+manual_node.py
+    manual control with xbox controller
+
+Note: line 175 of xbox controller library causes problems for LED, just
+      remove the try statement
