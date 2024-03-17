@@ -1,3 +1,0 @@
-pyserial==3.5
-setuptools==58.2.0
-xbox360controller==1.1.2
