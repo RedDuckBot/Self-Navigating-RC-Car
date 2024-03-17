@@ -1,7 +1,0 @@
-nodes needed to manually control macnav
-
-manual_node.py
-    manual control with xbox controller
-
-odom_to_tf_node.py  
-    listens to /odom and publishes the odom to base_footprint tf on /tf

@@ -1,5 +1,0 @@
-urdf config files for macnav
-
-launch
-    display.launch.xml
-        view the urdf in rviz and control joint through a gui
