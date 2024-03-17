@@ -1,3 +1,3 @@
-## Overview
+# LIDAR Navigation Robot
 
-A robot named MacNav tasked with navigating across MacEwan's campus.
+A RC, Ackerman robot named MacNav tasked with navigating across MacEwan's campus.
