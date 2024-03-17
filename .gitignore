@@ -1,13 +1,5 @@
-ws/log/
-ws/build/
-ws/install/
-Config_Files/cyclonedds.xml
-remote_setup/ws/log/
-remote_setup/ws/build/
-remote_setup/ws/install/
+macBot_ros2_ws/log/
+macBot_ros2_ws/build/
+macBot_ros2_ws/install/
+Config_Files/
 *.pyc
-remote_setup/cyclonedds.xml
-remote_setup/Scripts/
-ws/src/camera/openCV_client.py
-remote_setup/src/camera/openCV_server_dan.py
-Scripts/
