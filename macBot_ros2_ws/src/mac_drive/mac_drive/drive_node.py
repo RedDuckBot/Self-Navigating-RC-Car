@@ -27,6 +27,12 @@ class Steer_Servo():
     
     #Purpose: Perform steering for Ackerman Vehicle
     def steer(self, ang_vel, lin_vel):
+
+        if 0 < ang_vel < 0.1: #Without this check the bot will turn right instead of left
+            ang_vel = 0.1
+        if -0.05 < ang_vel < 0: #Similarily, bot turns right instead of left
+            ang_vel = -0.05
+
         if ang_vel == 0.0: #Center wheels
             self.servo.mid()
         else:
