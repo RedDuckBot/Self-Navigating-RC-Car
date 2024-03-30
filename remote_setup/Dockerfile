@@ -11,7 +11,8 @@ ENV CYCLONEDDS_URI=/tmp/cyclonedds.xml
 ENV ROS_DOMAIN_ID=0
 
 #Install packages
-RUN apt-get update
+RUN apt-get -y update
+RUN apt-get install -y ros-humble-slam-toolbox
 RUN apt-get install -y iputils-ping
 RUN apt-get install -y python3-pip 
 RUN apt-get install -y ros-humble-navigation2
