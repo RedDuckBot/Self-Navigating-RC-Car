@@ -18,6 +18,8 @@ setup(
             glob.glob(os.path.join('launch', '*launch.py'))),
         ('share/' + package_name + '/config', 
             glob.glob(os.path.join('config', '*'))),
+        ('share/' + package_name + '/maps', 
+            glob.glob(os.path.join('maps', '*'))),
     ],  
     install_requires=['setuptools'],
     zip_safe=True,
@@ -29,6 +31,7 @@ setup(
     entry_points={
         'console_scripts': [ 
             "odom_to_tf_node = macnav_drive.odom_to_tf_node:main",
+            "localization_node = macnav_drive.localization_node:main"
         ],
     },
 )
