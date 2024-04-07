@@ -28,8 +28,8 @@
             <ClearEntireCostmap name="ClearLocalCostmap-Subtree" service_name="local_costmap/clear_entirely_local_costmap"/>
             <ClearEntireCostmap name="ClearGlobalCostmap-Subtree" service_name="global_costmap/clear_entirely_global_costmap"/>
           </Sequence>
-          <Wait wait_duration="5"/>
-          <BackUp backup_dist="0.5" backup_speed="1.1"/>
+          <Wait wait_duration="2"/>
+          <BackUp backup_dist="1.0" backup_speed="0.8"/>
         </RoundRobin>
       </ReactiveFallback>
     </RecoveryNode>
