@@ -4,5 +4,9 @@ macBot_ros2_ws/install/
 remote_setup/ros2_ws/log/
 remote_setup/ros2_ws/install/
 remote_setup/ros2_ws/build/
+remote_setup/ros2_ws/src/macnav_drive/config/mapper_params_online_async.yaml
+remote_setup/ros2_ws/src/macnav_drive/config/nav2_params.yaml
+remote_setup/ros2_ws/src/macnav_drive/config/navigate_through_poses_w_replanning_and_recovery.xml
+remote_setup/Scripts/
 Config_Files/
 *.pyc
