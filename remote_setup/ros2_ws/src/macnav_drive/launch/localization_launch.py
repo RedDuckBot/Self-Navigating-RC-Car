@@ -31,7 +31,8 @@ def generate_launch_description():
         executable='localization_slam_toolbox_node',
         name='slam_toolbox',
         remappings=[
-            ('map', 'local_map')
+            ('map', 'local_map'),
+            ('initialpose', 'local_initialpose')
         ],
         output='screen')
 

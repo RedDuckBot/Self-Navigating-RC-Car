@@ -8,6 +8,6 @@
         --network host \
         --name remote_mac_bot \
         --device=/dev/input/js0 \
-        --volume /home/danteguy/dev/MacNav_Bot/MacEwan-Navigation-Bot/remote_setup/ros2_ws:/mac_remote/ws \
+        --volume /home/dan/projects/MacEwan-Navigation-Bot/remote_setup/ros2_ws:/mac_remote/ws \
         remote_macnav
 
