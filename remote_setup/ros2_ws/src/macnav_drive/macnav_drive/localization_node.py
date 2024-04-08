@@ -8,13 +8,16 @@ import tf2_geometry_msgs
 from geometry_msgs.msg import TransformStamped
 from geometry_msgs.msg import Transform
 from geometry_msgs.msg import PoseWithCovarianceStamped
-from geometry_msgs.msg import PoseWithStamped
+from geometry_msgs.msg import PoseStamped
+from geometry_msgs.msg import Pose
 from geometry_msgs.msg import PointStamped 
+from geometry_msgs.msg import Point
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import Quaternion
 from nav_msgs.msg import Odometry
 from nav_msgs.msg import OccupancyGrid
 from nav_msgs.srv import GetMap
+from scipy.spatial.transform import Rotation
 import math
 
 import cv2
@@ -69,38 +72,28 @@ class localization_node(Node):
         imy = cv2.Sobel(im, cv2.CV_32F, 0, 1, ksize=5)
         mag = np.sqrt(imx**2 + imy**2)
         temp = np.ones(im.shape)
-        temp[imx == 100] = np.nan
+        temp[imx == 0] = np.nan
         angle = np.where(temp == 1, np.arctan2(imy, imx), temp)
         return mag, angle
 
 
-    def calc_weight(self, global_angle, local_angle, local_mag, pose, origin):
-        # requires the local map to be rotated
-        # global map should be padded with nans 
-        pad = max(local_angle.shape)
-        start_row = global_angle.shape[1] - (origin[1] + pad)
-        end_row = start_row + local_angle.shape[0]
-        start_col = origin[0] + pad
-        end_col = start_col + local_angle.shape[1]
-
-        
-
-        # crop global map to size of new map
-        new_map = np.copy(global_angle[start_row:end_row, 
-                                       start_col:end_col])
-        # calc q at
-        new_map = 1 - (2 * np.abs(np.arctan(np.sin( local_angle - new_map) / np.cos(local_angle - new_map))) / np.pi)
+    def calc_weight(self, global_angle, local_angle, local_mag):
+        h,w = local_angle.shape
+        xx,yy = np.meshgrid(np.arange(w), np.arange(h))
+        m = (int(w/2),int(h/2))
+        d = np.sqrt((xx - m[0])**2 + (yy - m[1])**2)        
+        dx = m[0] - xx
+        dy = m[1] - yy
+        cv2.imwrite("dx.png", dx)
+        angs = np.arctan2(dy,dx)
+        angs[local_mag == 0] = np.nan
+        #calc q
+        weights = 1 - (2 * np.abs(np.arctan(np.sin(angs - global_angle) / np.cos(angs - global_angle))) / np.pi)
         # calc w
-        
-        new_map[new_map<0] = 0
-        new_map = new_map * local_mag
-        tmp = np.copy(global_angle)
-        tmp[start_row:end_row, start_col:end_col] = local_angle
-        if not self.wrote:
-            cv2.imwrite("tmp.png", (tmp + 3.15) * 10)
-            print("pose", pose)
-            self.wrote = True
-        return new_map
+        weights[weights<0] = 0
+        weights = weights * local_mag 
+        weights = weights / d
+        return np.nansum(weights)
 
 
 
@@ -121,17 +114,21 @@ class localization_node(Node):
         else:
             w = response.map.info.width
             h = response.map.info.height
+            self.resolution = response.map.info.resolution
 
             global_map = np.array(response.map.data)
             global_map = np.reshape(global_map, (h,w))
+
             global_map = np.flip(global_map, axis=0)
-            global_map[global_map > 0 ] = 0
-            global_map[global_map == -1] = 100 
+
+            global_map[global_map == 100] = -1
+            global_map[global_map == 0] = 100
+            global_map[global_map == -1] = 1 
             global_map = global_map.astype(np.uint8)
             self.global_angs = []
             for i in range(5,0,-1):
                 global_map_blur = cv2.GaussianBlur(global_map, (61,61), i)
-                _, ang = self.setup_map(global_map_blur)
+                mag, ang = self.setup_map(global_map_blur)
                 cv2.imwrite(f"tmp{5-i}.png", (ang +3.15) *10)
                 self.global_angs.append(ang)
 
@@ -150,93 +147,74 @@ class localization_node(Node):
     # distribution_sigma - tightness of point estimation distribution in pixels
     # num_points - number of points to generate
     # num_iter - number of iterations to resample
-    def localize(self,local_mag, local_ang, pose_est, origin, 
+    def localize(self,local_mag, local_ang, pose,
                  rotation_sigma=0.03,
-                 distribution_sigma=50, 
+                 distribution_sigma=1, 
                  num_points=100, 
                  num_iter=3, 
-                 iter_tightness_constraint=0.5, 
-                 it=0):
-        
-           
-        global_ang = np.pad(self.global_angs[it], pad_width=max(local_ang.shape), constant_values=np.nan)
-        points = np.random.multivariate_normal(pose_est[0], [[distribution_sigma, 0],[0, distribution_sigma]], num_points)
-        points = np.vstack((pose_est[0], points))
-        angles = np.random.normal(pose_est[1], rotation_sigma, num_points)
-        angles = np.hstack((pose_est[1], angles))
-        points = np.concatenate((points, angles[:, np.newaxis]), axis=1)
+                 c=0.5, 
+                 it=2):
         
         h,w = local_ang.shape
-        weights = []
-        self.wrote = False
-        for point in points:
-            rotation_matrix = cv2.getRotationMatrix2D((w//2,h//2), point[2], 1)
-            rotated_ang = cv2.warpAffine(local_ang, rotation_matrix, (w,h), borderValue=np.nan)
-            rotated_mag = cv2.warpAffine(local_mag, rotation_matrix, (w,h), borderValue=0)
-            x = int(point[0])
-            y = int(point[1])
-            weights.append(np.nansum(self.calc_weight(global_ang, rotated_ang, rotated_mag, (x,y), origin)))
 
-        max_weight = max(weights)
-        max_index = weights.index(max_weight)
-        best_point = points[max_index]
+        points = np.random.multivariate_normal([0,0], [[distribution_sigma,0],[0,distribution_sigma]], num_points)
+        angles = np.random.normal(0, rotation_sigma, num_points)
+        particles = np.hstack((points, angles.reshape(-1,1)))
+        particles = np.vstack((particles, np.array([0,0,0])))
+        pose_pix_x = int(pose[0]/self.resolution)
+        pose_pix_y = int(pose[1]/self.resolution)
+
+
+
+        wrote=False 
+        weights = []
+        for particle in particles:
+            rotation_matrix = cv2.getRotationMatrix2D((pose_pix_x, pose_pix_y), particle[2], 1)
+            translation_matrix = np.array([[1, 0, particle[0]], [0, 1, particle[1]]])
+            particle_ang = cv2.warpAffine(local_ang, rodtsfation_matrix, (w,h))
+            particle_mag = cv2.warpAffine(local_mag, rotation_matrix, (w,h))
+
+            particle_ang = cv2.warpAffine(particle_ang, translation_matrix, (w,h))
+            particle_mag = cv2.warpAffine(particle_mag, translation_matrix, (w,h))
+
+            value_indices = np.argwhere(particle_mag>0)
+            min_x = np.min(value_indices[:,0])
+            min_y = np.min(value_indices[:,1])
+            max_x = np.max(value_indices[:,0])
+            max_y = np.max(value_indices[:,1])
+
+
+            if not wrote:
+                wrote = True
+                temp = np.copy(self.global_angs[it])
+                temp[min_x, min_y] = 255
+                temp[min_x, max_y] = 255
+                temp[max_x, min_y] = 255
+                temp[max_x, max_y] = 255
+                temp[int(min_x + (max_x-min_x)/2),int(min_y + (max_y-min_y)/2)] = 255
+                temp = (temp+3.15) * 10
+                cv2.imwrite("temp.png", temp)
+            weights.append(self.calc_weight(self.global_angs[it][min_x:max_x, min_y:max_y], particle_ang[min_x:max_x, min_y:max_y], particle_mag[min_x:max_x, min_y:max_y]))
+        index = weights.index(max(weights)) 
+        pose_x = particles[index][0]*self.resolution
+        pose_y = particles[index][1]*self.resolution
+        pose_t = particles[index][2]
+        
+        return (pose_x, pose_y, pose_t)
 
         if it < num_iter:
-            return self.localize(local_mag, local_ang,
-                                 ((best_point[0], best_point[1]), best_point[2]), origin,
-                                 rotation_sigma=rotation_sigma*iter_tightness_constraint,
-                                 distribution_sigma=distribution_sigma*iter_tightness_constraint,
-                                 num_points=num_points,
-                                 num_iter=num_iter,
-                                 iter_tightness_constraint=iter_tightness_constraint,
-                                 it=it+1)
+            return self.localize(
+                local_mag,
+                local_ang,
+                (pose_x, pose_y, pose_t),
+                rotation_sigma=rotation_sigma*c,
+                distribution_sigma=distribution_sigma*c,
+                num_points=int(num_points*c),
+                c=c,
+                it=it+1
+            )
         else:
-            return best_point
-
-
-
-        ksize = int(gaussian_sigma*10)
-        if ksize % 2 == 0: ksize+=1
-        global_blur = cv2.GaussianBlur(global_ang, (ksize,ksize), gaussian_sigma, gaussian_sigma)
-        global_ang = np.pad(global_blur, pad_width=max(local_ang.shape), constant_values=np.nan)
-
-        points = np.random.multivariate_normal(pose_est[0], [[distribution_sigma, 0],[0, distribution_sigma]], num_points)
-
-        angles = np.random.normal(pose_est[1], rotation_sigma, num_points)
-        points = np.concatenate((points, angles[:, np.newaxis]), axis=1)
-        
-
-        h, w = local_ang.shape
-        weights = []
-        x = int(pose_est[0][0])
-        y = int(pose_est[0][1])
-        weights.append(np.nansum(self.calc_weight(global_ang, local_ang, local_mag, (x,y))))
-        for point in points:
-            rotation_matrix = cv2.getRotationMatrix2D((w/2,h/2), point[2], 1)
-            rotated_ang = cv2.warpAffine(local_ang, rotation_matrix, (w,h), borderValue=np.nan)
-            rotated_mag = cv2.warpAffine(local_mag, rotation_matrix, (w,h), borderValue=0)
-            x = int(point[0])
-            y = int(point[1])
-            weights.append(np.nansum(self.calc_weight(global_ang, rotated_ang, rotated_mag, (x,y))))
-
-        max_weight = max(weights)
-        max_index = weights.index(max_weight)
-        best_point = points[max_index]
-        if num_iter > 1:
-            p, w = self.localize(global_ang,
-                            local_mag, 
-                            local_ang,
-                            ((best_point[0],best_point[1]),best_point[2]), 
-                            rotation_sigma=rotation_sigma*iter_tightness_constraint, 
-                            distribution_sigma=distribution_sigma*iter_tightness_constraint,
-                            num_points=num_points,
-                            num_iter=num_iter-1,
-                            gaussian_sigma=gaussian_sigma*iter_tightness_constraint,
-                            iter_tightness_constraint=iter_tightness_constraint)
-            if w > max_weight:
-                best_point = p
-
-        return best_point, max(weights)
+            return (pose_x, pose_y, pose_t)
 
     def quaternion_to_euler(self, quat):
         x = quat.x
@@ -282,8 +260,9 @@ class localization_node(Node):
         buf.set_transform_static(tf_local_base, "")
         buf.set_transform_static(tf_global_base, "")
         tf_global_local = buf.lookup_transform("map", "local_map", rclpy.time.Time())
-
+        tf_global_local.header.stamp = self.get_clock().now().to_msg()
         self.tf_broadcaster.sendTransform(tf_global_local)
+        self.tf_buffer.set_transform_static(tf_global_local, "")
 
         _, _, yaw = self.quaternion_to_euler(tf_global_base.transform.rotation)
         self.pose = (msg.pose.pose.position.x, msg.pose.pose.position.y, yaw)
@@ -307,7 +286,9 @@ class localization_node(Node):
         buf.set_transform_static(tf_global_base, "")
         tf_global_local = buf.lookup_transform("map", "local_map", rclpy.time.Time())
 
+        tf_global_local.header.stamp = self.get_clock().now().to_msg()
         self.tf_broadcaster.sendTransform(tf_global_local)
+        self.get_logger().info(f"Setting pose to: {pose}" )
         self.pose = pose
 
 
@@ -320,42 +301,83 @@ class localization_node(Node):
         w = msg.info.width
         h = msg.info.height
         resolution = msg.info.resolution
-        
-
-
-        #self.set_pose(self.pose)
 
 
         data1d = np.array(msg.data)
         local_map = np.reshape(data1d, (h,w))
-        local_map[local_map<0] = 0
         local_map[local_map == -1] = 100
-        local_map = np.flip(local_map, axis=0)
+
+
+        gh,gw = self.global_angs[0].shape 
+
+        local_pad = np.zeros((gh,gw))
+        local_pad[0:h, 0:w] = local_map
+
+        origin = msg.info.origin
+
+        top_left = PointStamped()
+        top_left.point.x = origin.position.x
+        top_left.point.y = origin.position.y
+
+        top_right = PointStamped()
+        top_right.point.x = origin.position.x + w*resolution
+        top_right.point.y = origin.position.y
+
+        bot_left = PointStamped()
+        bot_left.point.x = origin.position.x
+        bot_left.point.y = origin.position.y + h*resolution
+
         
-        h,w = local_map.shape
         tf_global_local = self.tf_buffer.lookup_transform("map", "local_map", rclpy.time.Time())
 
-        origin_pose = msg.info.origin.position
-        origin_stamped = PoseStamped()
-        orogin_stamped.header.frame
-        origin_stamped.point = origin_pose
-        origin_transformed = tf2_geometry_msgs.do_transform_pose_stamped(origin_stamped, tf_global_local)
-
-        _, _, theta = self.quaternion_to_euler(tf_global_local.transform.rotation)
-        theta = theta * (180/np.pi)
-        rotation_matrix = cv2.getRotationMatrix2D((w//2,h//2), -theta, 1)
-        local_map = cv2.warpAffine(local_map.astype(np.uint8), rotation_matrix, (w,h), borderValue=np.nan)
-        local_map = cv2.GaussianBlur(local_map.astype(np.uint8), (5,5), 2)
-        local_mag, local_ang = self.setup_map(local_map)
+        top_left_global = tf2_geometry_msgs.do_transform_point(top_left, tf_global_local)
+        top_right_global = tf2_geometry_msgs.do_transform_point(top_right, tf_global_local)
+        bot_left_global = tf2_geometry_msgs.do_transform_point(bot_left, tf_global_local)
 
 
-        pose = ((self.pose[0]/resolution, self.pose[1]/resolution), self.pose[2])
-        origin = (int(origin_transformed.point.x/resolution), int(origin_transformed.point.y/resolution))
-        print("origin",origin)
-        best_point = self.localize(local_mag, local_ang, pose, origin)
-        best_point[0:2] = best_point[0:2] * resolution
-        print(f'best point: {best_point}')
-        self.set_pose(best_point)
+        top_left_global_pixel = gh - int(top_left_global.point.y/resolution), int(top_left_global.point.x/resolution)
+        top_right_global_pixel = gh - int(top_right_global.point.y/resolution), int(top_right_global.point.x/resolution)
+        bot_left_global_pixel = gh - int(bot_left_global.point.y/resolution), int(bot_left_global.point.x/resolution) 
+
+        src_pts = np.array([[0,0],[w,0],[0,h]], dtype=np.float32)
+        dst_pts = np.array([top_left_global_pixel, top_right_global_pixel, bot_left_global_pixel], dtype=np.float32)
+        affine_tf = cv2.getAffineTransform(src_pts, dst_pts)
+        local_pad = cv2.warpAffine(local_pad, affine_tf, (gh,gw))
+        local_pad = cv2.rotate(local_pad, cv2.ROTATE_90_CLOCKWISE)
+        local_pad = np.flip(local_pad, axis=1)
+
+        mask = (local_pad != 0)
+        mask2 = (local_pad == 0)
+        local_pad[mask] = 0
+        local_pad[mask2] = 100
+
+        local_pad = cv2.GaussianBlur(local_pad, (21,21), 10)
+        local_mag, local_ang = self.setup_map(local_pad.astype(np.uint8))
+
+        tmp = (local_ang +3.15) * 10
+
+        
+
+        tf_base_local = self.tf_buffer.lookup_transform("local_map", "base_link", rclpy.time.Time())
+        base_pose = PoseStamped()
+        base_pose.header.frame_id = "base_link"
+
+        local_pose = tf2_geometry_msgs.do_transform_pose_stamped(base_pose, tf_base_local)
+        global_pose = tf2_geometry_msgs.do_transform_pose_stamped(local_pose, tf_global_local)
+        _, _, t = self.quaternion_to_euler(global_pose.pose.orientation)
+        pose = (global_pose.pose.position.x, global_pose.pose.position.y, t)
+
+        pose_pix = self.localize(local_mag, local_ang, pose)
+        px = pose_pix[0] + pose[0]
+        py = pose_pix[1] + pose[1]
+        pt = pose_pix[2] + pose[2]
+        self.set_pose((px,py,pt))
+
+
+
+
+
+
 
 
         
