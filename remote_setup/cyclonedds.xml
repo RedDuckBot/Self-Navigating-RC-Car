@@ -7,10 +7,10 @@
     <General>
       <Interfaces>
         <!-- WARNING: set this to the IP address that you can be reached at by your peers -->
-          <NetworkInterface address="192.168.75.180"/> 
+          <NetworkInterface address="192.168.1.144"/> 
       </Interfaces>
       <AllowMulticast>false</AllowMulticast>
-      <MulticastRecvNetworkInterfaceAddresses>al5l</MulticastRecvNetworkInterfaceAddresses>
+      <MulticastRecvNetworkInterfaceAddresses>all</MulticastRecvNetworkInterfaceAddresses>
       <Transport>udp</Transport>
       <MaxMessageSize>65500B</MaxMessageSize>
       <FragmentSize>4000B</FragmentSize>
@@ -23,7 +23,7 @@
       <!-- list IP addresses of other systems you want to communicate with -->
       <Peers>
         <Peer Address="localhost"/>
-        <Peer Address="192.168.75.17"/>
+        <Peer Address="192.168.1.97"/>
       </Peers>
     </Discovery>
 
